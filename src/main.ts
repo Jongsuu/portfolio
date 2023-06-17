@@ -6,6 +6,7 @@ import { UtilsComponent } from './utils.component';
 async function loadPages(): Promise<void> {
     let main = document.querySelector<HTMLElement>('#app');
     let pages = [
+        "/src/navbar/navbar.html",
         "/src/home/home.html"
     ];
 

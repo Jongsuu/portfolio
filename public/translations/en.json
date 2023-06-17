@@ -1,5 +1,12 @@
 {
     "en": {
+        "nav": {
+            "home": "Home",
+            "about": "About",
+            "projects": "Projects",
+            "curriculum": "Resumé",
+            "contact": "Contact"
+        },
         "home": {
             "welcomeMessage": "Hello"
         }
