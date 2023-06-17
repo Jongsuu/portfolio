@@ -1,51 +1,80 @@
 import $ from "jquery";
 import { I18n } from "i18n-js";
-
-export interface Language {
-    locale: string,
-    language: string
-}
+import { availableParallelism } from "os";
 
 export class UtilsComponent {
     private i18n: I18n;
 
+    private availableTranslations = [
+        "en", "es", "cat"
+    ]
+
     constructor() {
         this.i18n = new I18n();
         this.i18n.defaultLocale = "en";
-        this.initializeTranslations(this.getLocale());
+        this.i18n.availableLocales = this.availableTranslations;
+        this.initializeTranslations();
     }
 
-    private getLocale(): Language  {
-        let lang: Language = {
-            locale: "en",
-            language: "en"
-        };
+    private getLocale(): string  {
+        // First check stored locale
+        let locale = localStorage.getItem("locale");
 
-        let browserLanguages = navigator.languages;
-        let availableLanguages = this.i18n.availableLocales;
+        if (!locale) {
+            console.log("loaded locale from navigator");
+            locale = "en";
+            let availableLanguages = this.i18n.availableLocales;
+            let browserLanguages = navigator.languages.map(lang => lang.includes("-") ? lang.split("-")[0] : lang);
+            let langSet = new Set<string>(browserLanguages);
 
-        for (let i = 0; i < browserLanguages.length; i++) {
-            if (availableLanguages.find(lang => lang.includes("-") ? lang.split("-")[0] : lang === browserLanguages[i])) {
-                lang.locale = browserLanguages[i].split("-")[0];
-
-                lang.language = lang.locale === "en" ?
-                    lang.locale : lang.language = browserLanguages[i];
-                break;
+            for (let i = 0; i < langSet.size; i++) {
+                if (availableLanguages.find(lang => lang === langSet[i])) {
+                    locale = langSet[i];
+                    break;
+                }
             }
         }
+        else
+            console.log("loaded locale from storage");
 
-        return lang;
+        return locale;
     }
 
-    public async initializeTranslations(lang: Language): Promise<void> {
-        await this.loadTranslations(lang);
+    public async initializeTranslations(): Promise<void> {
+        await this.changeTranslations(this.getLocale());
+    }
+
+    public async changeTranslations(locale: string): Promise<void> {
+        let aboveItem = document.querySelector<HTMLElement>("#LanguageDropdown").children[0];
+        let firstItem = document.querySelector<HTMLElement>("#LanguageOptionsSelected");
+        let item = document.querySelector<HTMLElement>("#LanguageOptions").querySelector(`[lang="${locale}"`);
+
+        let itemLang = item.getAttribute("lang");
+        let itemFlag = item.querySelector("i").className;
+        let itemLangText = item.querySelector("span").innerText;
+
+        item.children[0].className = firstItem.children[0].className;
+        item.children[1].innerHTML = firstItem.children[1].innerHTML;
+        item.setAttribute("lang", firstItem.lang);
+
+        firstItem.children[0].className = itemFlag;
+        firstItem.children[1].innerHTML = itemLangText;
+        firstItem.setAttribute("lang", itemLang);
+
+        aboveItem.className = "m-0 " + itemFlag;
+
+        await this.loadTranslations(locale);
         await this.refreshTranslations();
     }
 
-    async loadTranslations(lang: Language): Promise<void> {
-        console.info("load translations");
-        this.i18n.locale = lang.locale;
-        const response = await fetch(`/translations/${lang.language}.json`);
+    async loadTranslations(locale: string): Promise<void> {
+        console.info("load translations in " + locale);
+        this.i18n.locale = locale;
+
+        // Store the new selected locale
+        localStorage.setItem("locale", locale);
+
+        const response = await fetch(`/translations/${locale}.json`);
         const translations = await response.json();
         this.i18n.store(translations);
     }

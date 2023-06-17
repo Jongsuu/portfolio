@@ -1,0 +1,14 @@
+{
+    "es": {
+        "nav": {
+            "home": "Inicio",
+            "about": "Sobre mi",
+            "projects": "Proyectos",
+            "curriculum": "Currículum",
+            "contact": "Contacto"
+        },
+        "home": {
+            "welcomeMessage": "Hola"
+        }
+    }
+}

@@ -1,27 +1,27 @@
 import "bootstrap";
 import $ from "jquery";
-import './style.css'
 import { UtilsComponent } from './utils.component';
-
-async function loadPages(): Promise<void> {
-    let main = document.querySelector<HTMLElement>('#app');
-    let pages = [
-        "/src/navbar/navbar.html",
-        "/src/home/home.html"
-    ];
-
-    for (let i = 0; i < pages.length; i++) {
-        const response = await fetch(pages[i]);
-        const html = await response.text();
-        main.innerHTML += html;
-    }
-}
+import "/node_modules/flag-icons/css/flag-icons.min.css";
+import "/node_modules/bootstrap/scss/bootstrap.scss";
 
 console.info("main.ts");
 
-$(() => {
-    loadPages().then(() => {
-        console.info("utils.ts");
-        let utils = new UtilsComponent();
+function changeTranslations(utils: UtilsComponent): void {
+    document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
+        if (!item.id) {
+            item.addEventListener("click", async () => {
+                document.body.classList.remove("show");
+                utils.changeTranslations(item.lang);
+                setTimeout(() => { document.body.classList.add("show"); }, 200);
+            })
+        }
     });
+}
+
+$(() => {
+    console.info("utils.ts");
+    let utils = new UtilsComponent();
+
+    changeTranslations(utils);
+    setTimeout(() => { document.body.classList.add("show"); }, 100);
 });

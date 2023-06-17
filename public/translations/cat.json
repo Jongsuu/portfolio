@@ -1,0 +1,14 @@
+{
+    "cat": {
+        "nav": {
+            "home": "Inici",
+            "about": "Sobre mi",
+            "projects": "Projectes",
+            "curriculum": "Currículum",
+            "contact": "Contacte"
+        },
+        "home": {
+            "welcomeMessage": "Hola"
+        }
+    }
+}
