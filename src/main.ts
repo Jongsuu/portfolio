@@ -27,7 +27,7 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
 }
 
 $(async () => {
-    await loadPageComponents();
+    // await loadPageComponents();
 
     console.info("utils.ts");
     let utils = new UtilsComponent();
