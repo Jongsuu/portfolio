@@ -4,17 +4,21 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "clean": "rm -fr node_modules dist && npm cache clean",
+    "dev": "vite --open",
+    "build": "rm -fr dist && tsc --build tsconfig.json && vite build",
+    "preview": "vite preview --port 5173 --open"
   },
   "devDependencies": {
+    "@types/bootstrap": "^5.2.6",
+    "@types/i18n-js": "^3.8.4",
+    "@types/jquery": "^3.5.16",
+    "@types/node": "^20.3.1",
     "typescript": "^5.0.2",
+    "tslib": "^2.5.3",
     "vite": "^4.3.9"
   },
   "dependencies": {
-    "@types/i18n-js": "^3.8.4",
-    "@types/jquery": "^3.5.16",
     "bootstrap": "^5.3.0",
     "i18n-js": "^4.2.3",
     "jquery": "^3.7.0"

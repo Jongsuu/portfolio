@@ -5,7 +5,6 @@ import { UtilsComponent } from './utils.component';
 
 async function loadPages(): Promise<void> {
     let main = document.querySelector<HTMLElement>('#app');
-    console.log(main.innerHTML);
     let pages = [
         "/src/home/home.html"
     ];
@@ -14,9 +13,7 @@ async function loadPages(): Promise<void> {
         const response = await fetch(pages[i]);
         const html = await response.text();
         main.innerHTML += html;
-        console.log(html);
     }
-    console.log(main.innerHTML);
 }
 
 console.info("main.ts");
@@ -25,6 +22,5 @@ $(() => {
     loadPages().then(() => {
         console.info("utils.ts");
         let utils = new UtilsComponent();
-        utils.refreshTranslations();
     });
 });

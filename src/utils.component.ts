@@ -1,3 +1,4 @@
+import $ from "jquery";
 import { I18n } from "i18n-js";
 
 export interface Language {
@@ -11,7 +12,7 @@ export class UtilsComponent {
     constructor() {
         this.i18n = new I18n();
         this.i18n.defaultLocale = "en";
-        this.loadTranslations(this.getLocale());
+        this.initializeTranslations(this.getLocale());
     }
 
     private getLocale(): Language  {
@@ -20,8 +21,6 @@ export class UtilsComponent {
             language: "en"
         };
 
-        console.info("LANG", navigator.language)
-        console.info("LANGS", navigator.languages)
         let browserLanguages = navigator.languages;
         let availableLanguages = this.i18n.availableLocales;
 
@@ -35,18 +34,20 @@ export class UtilsComponent {
             }
         }
 
-        console.info(lang);
-
         return lang;
     }
 
-    private loadTranslations(lang: Language): void {
+    public async initializeTranslations(lang: Language): Promise<void> {
+        await this.loadTranslations(lang);
+        await this.refreshTranslations();
+    }
+
+    async loadTranslations(lang: Language): Promise<void> {
         console.info("load translations");
         this.i18n.locale = lang.locale;
-        fetch(`/public/translations/${lang.language}.json`)
-            .then(response => response.json()
-            .then(translations => this.i18n.store(translations)));
-            console.log(this.i18n.translations);
+        const response = await fetch(`/translations/${lang.language}.json`);
+        const translations = await response.json();
+        this.i18n.store(translations);
     }
 
     public async refreshTranslations(): Promise<void> {
@@ -56,9 +57,8 @@ export class UtilsComponent {
 
         document.querySelectorAll("[i18n]").forEach(item => {
             let i18nId = item.getAttribute("i18n");
-            console.log(i18nId);
 
-            if (item.tagName == "INPUT")
+            if (item.tagName === "INPUT")
                 item.setAttribute("placeholder", _this.i18n.t(i18nId));
             else
                 item.innerHTML = _this.i18n.t(i18nId);
