@@ -9,6 +9,9 @@
         },
         "home": {
             "welcomeMessage": "Hola"
+        },
+        "about": {
+            "title": "Sobre mi"
         }
     }
 }

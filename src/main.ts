@@ -1,8 +1,6 @@
 import "bootstrap";
 import $ from "jquery";
 import { UtilsComponent } from './utils.component';
-import "/node_modules/flag-icons/css/flag-icons.min.css";
-import "/node_modules/bootstrap/scss/bootstrap.scss";
 
 console.info("main.ts");
 
@@ -35,5 +33,5 @@ $(async () => {
     let utils = new UtilsComponent();
 
     await changeTranslationsEvent(utils);
-    setTimeout(() => { document.body.classList.add("show"); }, 100);
+    setTimeout(() => { document.body.classList.add("show"); }, 50);
 });
