@@ -6,7 +6,17 @@ import "/node_modules/bootstrap/scss/bootstrap.scss";
 
 console.info("main.ts");
 
-function changeTranslations(utils: UtilsComponent): void {
+async function loadPage(file: string): Promise<string> {
+    const response = await fetch(file);
+    return await response.text();
+}
+
+async function loadPageComponents(): Promise<void> {
+    let navbar = await loadPage("/src/navbar.html");
+    document.body.innerHTML = navbar + document.body.innerHTML;
+}
+
+async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
         if (!item.id) {
             item.addEventListener("click", async () => {
@@ -18,10 +28,12 @@ function changeTranslations(utils: UtilsComponent): void {
     });
 }
 
-$(() => {
+$(async () => {
+    await loadPageComponents();
+
     console.info("utils.ts");
     let utils = new UtilsComponent();
 
-    changeTranslations(utils);
+    await changeTranslationsEvent(utils);
     setTimeout(() => { document.body.classList.add("show"); }, 100);
 });

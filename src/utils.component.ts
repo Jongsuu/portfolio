@@ -21,7 +21,6 @@ export class UtilsComponent {
         let locale = localStorage.getItem("locale");
 
         if (!locale) {
-            console.log("loaded locale from navigator");
             locale = "en";
             let availableLanguages = this.i18n.availableLocales;
             let browserLanguages = navigator.languages.map(lang => lang.includes("-") ? lang.split("-")[0] : lang);
@@ -34,8 +33,6 @@ export class UtilsComponent {
                 }
             }
         }
-        else
-            console.log("loaded locale from storage");
 
         return locale;
     }
@@ -68,7 +65,6 @@ export class UtilsComponent {
     }
 
     async loadTranslations(locale: string): Promise<void> {
-        console.info("load translations in " + locale);
         this.i18n.locale = locale;
 
         // Store the new selected locale
@@ -80,8 +76,6 @@ export class UtilsComponent {
     }
 
     public async refreshTranslations(): Promise<void> {
-        console.info("refresh translations");
-
         let _this = this;
 
         document.querySelectorAll("[i18n]").forEach(item => {
