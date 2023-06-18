@@ -1,4 +1,4 @@
-import "@fortawesome/fontawesome-free"
+import "@fortawesome/fontawesome-free";
 import "flag-icons";
 import "bootstrap";
 import $ from "jquery";
@@ -29,8 +29,6 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
 }
 
 $(() => {
-    // await loadPageComponents();
-
     console.info("utils.ts");
     let utils = new UtilsComponent();
 
