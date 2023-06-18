@@ -1,6 +1,5 @@
 import "@fortawesome/fontawesome-free"
 import "flag-icons";
-import "bootstrap";
 import $ from "jquery";
 import { UtilsComponent } from './utils.component';
 
