@@ -33,5 +33,6 @@ $(() => {
     let utils = new UtilsComponent();
 
     changeTranslationsEvent(utils);
+
     setTimeout(() => { document.body.classList.add("show"); }, 150);
 });

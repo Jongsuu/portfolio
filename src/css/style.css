@@ -1,0 +1,33 @@
+/* Imports */
+@import "navbar.css";
+@import "responsive.css";
+
+:root {
+    --main-btn-color: rgba(170, 116, 212, 0.75);
+    --text-normal-color: #333;
+    --text-hover-color: #ad71de;
+    --transition-duration: 0.25s;
+}
+
+.text-normal {
+    color: var(--text-normal-color);
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ocu {
+    display: none;
+}
+
+main {
+    padding: 3rem;
+}
+
+section {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}

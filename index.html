@@ -7,9 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Pau Pereira</title>
 
-        <script type="module" src="/src/main.ts"></script>
+        <script type="module" src="/src/scripts/main.ts"></script>
 
-        <link rel="stylesheet" href="/src/style.css" />
+        <link rel="stylesheet" href="/src/css/style.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -30,32 +30,26 @@
 
             <nav>
                 <!--Logo-->
-                <div class="logo-container">
-                    <div class="logo-photo">
-                        <img src="/src/img/pfp.png" alt="logo" />
-                    </div>
-                    <span class="logo-text">Pau Pereira</span>
-                </div>
+                <a href="/" class="nav-logo">Pau Pereira</a>
 
                 <!--Navigation Links-->
                 <ul class="nav-links-list">
-                    <li><a href="/" i18n="nav.home" class="nav-links-item"></a></li>
                     <li><a href="./about.html" i18n="nav.about" class="nav-links-item"></a></li>
+                    <li><a href="./services.html" i18n="nav.services" class="nav-links-item"></a></li>
                     <li><a href="./projects.html" i18n="nav.projects" class="nav-links-item"></a></li>
-                    <li><a href="./curriculum.html" i18n="nav.curriculum" class="nav-links-item"></a></li>
                     <li><a href="./contact.html" i18n="nav.contact" class="nav-links-item"></a></li>
                 </ul>
 
                 <div class="nav-right">
                     <!--Nav Menu-->
                     <a class="nav-menu-toggle">
-                        <i class="fa-solid fa-bars text-light"></i>
+                        <i class="fa-solid fa-bars text-normal"></i>
                     </a>
 
                     <!--Languages Dropdown-->
                     <div class="dropdown" id="LanguageDropdownContainer">
 
-                        <a class="dropdown-toggle text-light" id="LanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-gb fi m-0"></i></a>
+                        <a class="dropdown-toggle text-normal" id="LanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-gb fi m-0"></i></a>
 
                         <ul class="dropdown-menu fade" aria-labelledby="LanguageDropdown" id="LanguageOptions">
                             <li>

@@ -1,17 +1,22 @@
 {
     "es": {
         "nav": {
-            "home": "Inicio",
             "about": "Sobre mi",
+            "services": "Servicios",
             "projects": "Proyectos",
-            "curriculum": "Currículum",
-            "contact": "Contacto"
+            "contact": "Contáctame"
         },
         "home": {
             "welcomeMessage": "Hola"
         },
         "about": {
             "title": "Sobre mi"
+        },
+        "services": {
+
+        },
+        "contact": {
+
         }
     }
 }

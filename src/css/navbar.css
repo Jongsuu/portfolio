@@ -1,0 +1,95 @@
+header {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: none;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav {
+    padding: 0.5rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo */
+.nav-logo {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition-duration: var(--transition-duration);
+    color: var(--text-normal-color);
+    overflow: hidden;
+    background: linear-gradient(to right, var(--text-hover-color), var(--text-hover-color) 50%, var(--text-normal-color) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 350ms ease;
+}
+
+.nav-logo:hover {
+    background-position: 0 100%;
+}
+
+/* Links */
+.nav-links-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 5rem;
+}
+
+.nav-links-list li {
+    transform: scale(1);
+    transition-duration: var(--transition-duration);
+}
+
+.nav-links-item {
+    display: block;
+    color: var(--text-normal-color);
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    transition-duration: var(--transition-duration);
+    overflow: hidden;
+    background: linear-gradient(to right, var(--text-hover-color), var(--text-hover-color) 50%, var(--text-normal-color) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 275ms ease;
+}
+
+.nav-links-item:hover {
+    background-position: 0 100%;
+}
+
+.nav-menu-toggle {
+    font-size: 23px;
+    display: none;
+}
+
+.nav-right {
+    display: flex;
+}
+
+/* Language Dropdown */
+#LanguageDropdownContainer {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-item:hover {
+    cursor: pointer;
+}

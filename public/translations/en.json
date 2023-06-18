@@ -1,17 +1,22 @@
 {
     "en": {
         "nav": {
-            "home": "Home",
             "about": "About",
+            "services": "Services",
             "projects": "Projects",
-            "curriculum": "Resumé",
-            "contact": "Contact"
+            "contact": "Contact me"
         },
         "home": {
             "welcomeMessage": "Hello"
         },
         "about": {
             "title": "About"
+        },
+        "services": {
+
+        },
+        "contact": {
+
         }
     }
 }

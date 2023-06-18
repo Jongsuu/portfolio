@@ -1,17 +1,22 @@
 {
     "cat": {
         "nav": {
-            "home": "Inici",
             "about": "Sobre mi",
+            "services": "Serveis",
             "projects": "Projectes",
-            "curriculum": "Currículum",
-            "contact": "Contacte"
+            "contact": "Contacta'm"
         },
         "home": {
             "welcomeMessage": "Hola"
         },
         "about": {
             "title": "Sobre mi"
+        },
+        "services": {
+
+        },
+        "contact": {
+
         }
     }
 }
