@@ -1,5 +1,6 @@
 import "@fortawesome/fontawesome-free"
 import "flag-icons";
+import "bootstrap";
 import $ from "jquery";
 import { UtilsComponent } from './utils.component';
 
@@ -34,5 +35,5 @@ $(() => {
     let utils = new UtilsComponent();
 
     changeTranslationsEvent(utils);
-    setTimeout(() => { document.body.classList.add("show"); }, 50);
+    setTimeout(() => { document.body.classList.add("show"); }, 150);
 });
