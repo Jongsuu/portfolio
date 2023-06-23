@@ -1,6 +1,5 @@
 import $ from "jquery";
 import { I18n } from "i18n-js";
-import { availableParallelism } from "os";
 
 export class UtilsComponent {
     private i18n: I18n;

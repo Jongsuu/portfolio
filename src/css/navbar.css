@@ -21,7 +21,7 @@ nav {
     font-size: 20px;
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: bolder;
+    font-weight: 900;
     transition-duration: var(--transition-duration);
     color: var(--text-normal-color);
     overflow: hidden;
@@ -69,7 +69,7 @@ nav {
     transition: background-position 275ms ease;
 }
 
-.nav-links-item:hover {
+.nav-links-item:hover:not(.nav-links-item-active) {
     background-position: 0 100%;
 }
 
@@ -80,6 +80,11 @@ nav {
 
 .nav-right {
     display: flex;
+}
+
+.nav-links-item-active {
+    color: var(--text-hover-color) !important;
+    background-position: 0 100%;
 }
 
 /* Language Dropdown */

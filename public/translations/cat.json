@@ -10,7 +10,13 @@
             "welcomeMessage": "Hola"
         },
         "about": {
-            "title": "Sobre mi"
+            "title": "Sobre mi",
+            "mySkills": {
+                "title": "Tecnologies que utilitzo",
+                "frontend": "Estic familiarizat amb aquestes eines per construir la part del client de les aplicacions",
+                "backend": "Estic familiarizat amb aquestes eines per construir la part de serveis de les aplicacions",
+                "other": "Altres eines que utilitzo"
+            }
         },
         "services": {
 

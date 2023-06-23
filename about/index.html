@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About | Pau Pereira</title>
+
+        <script type="module" src="/src/scripts/main.ts"></script>
+
+        <link rel="stylesheet" href="/src/css/style.css" />
+        <link rel="stylesheet" href="/src/css/about.css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+        <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+
+    </head>
+
+    <body class="fade">
+
+        <!--Navbar-->
+        <header>
+
+            <nav>
+                <!--Logo-->
+                <a href="/" class="nav-logo">Pau Pereira</a>
+
+                <!--Navigation Links-->
+                <ul class="nav-links-list">
+                    <li><a href="/about" i18n="nav.about" class="nav-links-item nav-links-item-active"></a></li>
+                    <li><a href="./services.html" i18n="nav.services" class="nav-links-item"></a></li>
+                    <li><a href="./projects.html" i18n="nav.projects" class="nav-links-item"></a></li>
+                    <li><a href="./contact.html" i18n="nav.contact" class="nav-links-item"></a></li>
+                </ul>
+
+                <div class="nav-right">
+                    <!--Nav Menu-->
+                    <a class="nav-menu-toggle">
+                        <i class="fa-solid fa-bars text-normal"></i>
+                    </a>
+
+                    <!--Languages Dropdown-->
+                    <div class="dropdown" id="LanguageDropdownContainer">
+
+                        <a class="dropdown-toggle text-normal" id="LanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-gb fi m-0"></i></a>
+
+                        <ul class="dropdown-menu fade" aria-labelledby="LanguageDropdown" id="LanguageOptions">
+                            <li>
+                                <a class="dropdown-item" lang="en" id="LanguageOptionsSelected">
+                                    <i class="fi-gb fi"></i>
+                                    <span>English</span>
+                                    <i class="fa-solid fa-check text-success ms-2"></i>
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li>
+                                <a class="dropdown-item" lang="es">
+                                    <i class="fi-es fi"></i>
+                                    <span>Español</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" lang="cat">
+                                    <i class="fi-es-ct fi"></i>
+                                    <span>Català</span>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </nav>
+
+        </header>
+
+        <main>
+            <section id="about">
+                <h1 i18n="about.title" class="section-title"></h1>
+
+                <!--My Skills-->
+                <div id="mySkills">
+
+                    <h2 i18n="about.mySkills.title"></h2>
+
+                    <div id="frontend" class="skills-card-container">
+
+                        <h5 i18n="about.mySkills.frontend"></h5>
+
+                        <div class="skills-cards">
+
+                            <a class="skills-card-item" title="HTML" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                                <img alt="HTML" src="/src/img/about/html5.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="CSS" href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                                <img alt="CSS" src="/src/img/about/css3.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                                <img alt="JavaScript" src="/src/img/about/javascript.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="TypeScript" href="https://www.typescriptlang.org/" target="_blank">
+                                <img alt="TypeScript" src="/src/img/about/typescript.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="React" href="https://react.dev/" target="_blank">
+                                <img alt="React" src="/src/img/about/react.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Boostrap" href="https://getbootstrap.com/" target="_blank">
+                                <img alt="Boostrap" src="/src/img/about/boostrap.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="TailwindCSS" href="https://tailwindcss.com/" target="_blank">
+                                <img alt="TailwindCSS" src="/src/img/about/tailwindcss.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Vite" href="https://vitejs.dev/" target="_blank">
+                                <img alt="Vite" src="/src/img/about/vite.svg" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="WPF" href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-7.0" target="_blank">
+                                <img alt="WPF" src="/src/img/about/wpf.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Android Jetpack Compose" href="https://developer.android.com/jetpack/compose?gclid=EAIaIQobChMI0rTprvLZ_wIVSYpoCR3bGwgFEAAYASAAEgJhxvD_BwE&gclsrc=aw.ds" target="_blank">
+                                <img alt="Jetpack Compose" src="/src/img/about/jetpackCompose.png" class="skills-card-item-img" />
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div id="backend" class="skills-card-container">
+
+                        <h5 i18n="about.mySkills.backend"></h5>
+
+                        <div class="skills-cards">
+
+                            <a class="skills-card-item" title="C#" href="https://dotnet.microsoft.com/en-us/" target="_blank">
+                                <img alt="C#" src="/src/img/about/csharp.svg" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="ASP.NET" href="https://dotnet.microsoft.com/es-es/apps/aspnet" target="_blank">
+                                <img alt="ASP.NET" src="/src/img/about/aspNet.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Java" href="https://dev.java/" target="_blank">
+                                <img alt="Java" src="/src/img/about/java.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Python" href="https://www.python.org/" target="_blank">
+                                <img alt="Python" src="/src/img/about/python.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="MySQL" href="https://www.mysql.com/" target="_blank">
+                                <img alt="MySQL" src="/src/img/about/mySql.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="SQL Server" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank">
+                                <img alt="SQL Server" src="/src/img/about/sqlServer.svg" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="PostgreSQL" href="https://www.postgresql.org/" target="_blank">
+                                <img alt="PostgreSQL" src="/src/img/about/postgreSql.png" class="skills-card-item-img" />
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div id="otherTools" class="skills-card-container">
+
+                        <h5 i18n="about.mySkills.other"></h5>
+
+                        <div class="skills-cards">
+
+                            <a class="skills-card-item" title="Git" href="https://git-scm.com/" target="_blank">
+                                <img alt="Git" src="/src/img/about/git.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="GitHub" href="https://github.com/" target="_blank">
+                                <img alt="GitHub" src="/src/img/about/github.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Neovim" href="https://neovim.io/" target="_blank">
+                                <img alt="Neovim" src="/src/img/about/neovim.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Node Package Manager" href="https://www.npmjs.com/" target="_blank">
+                                <img alt="NPM" src="/src/img/about/npm.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="XAMPP" href="https://www.apachefriends.org/index.html" target="_blank">
+                                <img alt="XAMPP" src="/src/img/about/xampp.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Postman" href="https://www.postman.com/" target="_blank">
+                                <img alt="Postman" src="/src/img/about/postman.png" class="skills-card-item-img" />
+                            </a>
+
+                            <a class="skills-card-item" title="Netlify" href="https://www.netlify.com/" target="_blank">
+                                <img alt="Netlify" src="/src/img/about/netlify.png" class="skills-card-item-img" />
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
+
+    </body>
+
+</html>
