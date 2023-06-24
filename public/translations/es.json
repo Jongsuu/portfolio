@@ -13,9 +13,12 @@
             "title": "Sobre mi",
             "mySkills": {
                 "title": "Tecnologías que uso",
-                "frontend": "Estoy familiarizado con estas herramientas para construir la parte del cliente de las aplicaciones",
-                "backend": "Estoy familiarizado con estas herramientas para construir la parte de servicios de las aplicaciones",
+                "frontend": "Aplicaciones del lado del cliente",
+                "backend": "Aplicaciones del lado del servidor",
                 "other": "Otras herramientas que uso"
+            },
+            "experience": {
+                "title": "Experiencia"
             }
         },
         "services": {

@@ -21,8 +21,9 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
         if (!item.id) {
             item.addEventListener("click", async () => {
                 document.body.classList.remove("show");
-                utils.changeTranslations(item.lang);
-                setTimeout(() => { document.body.classList.add("show"); }, 200);
+                utils.changeTranslations(item.lang).then(() => {
+                    setTimeout(() => { document.body.classList.add("show"); }, 300);
+                });
             })
         }
     });
@@ -34,5 +35,5 @@ $(() => {
 
     changeTranslationsEvent(utils);
 
-    setTimeout(() => { document.body.classList.add("show"); }, 150);
+    setTimeout(() => { document.body.classList.add("show"); }, 300);
 });

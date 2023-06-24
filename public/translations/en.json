@@ -13,9 +13,12 @@
             "title": "About",
             "mySkills": {
                 "title": "Technologies I use",
-                "frontend": "I am familiar with these tools for building client-side applications",
-                "backend": "I am familiar with these tools for building the backend of applications",
+                "frontend": "Client-side applications",
+                "backend": "Server-side applications",
                 "other": "Other tools I use"
+            },
+            "experience": {
+                "title": "Experience"
             }
         },
         "services": {

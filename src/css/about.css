@@ -1,25 +1,42 @@
 #about {
-    color: var(--text-normal-color);
-    font-weight: 100;
+    margin: 0rem 3rem;
 }
 
-#mySkills {
-    padding: 1rem 5rem;
+#skills-content {
+    margin: 0 2rem;
+}
+
+#frontend {
+    margin-top: 1rem;
 }
 
 .skills-card-container {
     border-radius: .25rem;
     box-shadow: 0 25px 50px -7px rgba(0, 0, 0, .25);
-    background-color: rgba(192, 165, 207, 0.5);
-    padding: 1.25rem;
+    background-color: rgba(255, 255, 255, 1);
+    padding-bottom: 1rem;
 }
 
 .skills-cards {
-    padding: 0.5rem -1rem;
+    margin-top: 0.5rem;
+    padding: 1rem -1rem;
+}
+
+.skills-cards-title {
+    transform: translate(-10px, -10px);
+    border-radius: .1rem;
+    background-color: var(--text-hover-color);
+    padding: 0.75rem;
+    width: fit-content;
+}
+
+.skills-cards-title span {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
 }
 
 .skills-card-item {
-    filter: grayscale(100%);
     text-decoration: none;
     margin-left: 3rem;
     display: inline-block;
@@ -30,7 +47,6 @@
 }
 
 .skills-card-item:hover {
-    filter: none;
     transform: scale(1.25);
     transition-duration: var(--transition-duration);
 }
@@ -47,4 +63,91 @@
 #backend {
     margin-top: 2rem;
     margin-bottom: 2rem;
+}
+
+#experience {
+    margin-top: 1.5rem;
+}
+
+#experience h2 {
+    margin-bottom: 0;
+}
+
+.experience-container {
+    margin: 0 2rem;
+}
+
+.experience-item {
+    border-radius: .25rem;
+    box-shadow: 0 25px 50px -7px rgba(0, 0, 0, .25);
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0rem 1.25rem 1.25rem 1.25rem;
+    margin-top: 1rem;
+}
+
+.experience-date-container {
+    transform: translate(-30px, -10px);
+    border-radius: .1rem;
+    background-color: var(--text-hover-color);
+    padding: 0.75rem;
+    width: fit-content;
+}
+
+.experience-date {
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+.experience-content {
+    display: flex;
+    width: 100%;
+}
+
+.experience-item-header {
+    margin: 0;
+    width: 40%;
+}
+
+.experience-company {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 0.25rem;
+}
+
+.experience-job-position {
+    border-radius: 0.1rem;
+    background-color: rgba(230, 34, 54, 0.75);
+    width: fit-content;
+    font-weight: 500;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.experience-job-situation {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.experience-technologies {
+    margin: 0;
+    width: 60%;
+    align-items: center;
+}
+
+.experience-technologies-item {
+    display: inline-block;
+    border-radius: 10rem;
+    background-color: rgba(156, 32, 214, 0.75);
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+}
+
+.experience-technologies-item-text {
+    color: #fff;
+    font-weight: 500;
 }
