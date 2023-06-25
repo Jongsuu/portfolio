@@ -1,3 +1,10 @@
+@media (max-width: 1600px) {
+    main {
+        margin: 0rem 5rem 1.75rem 5rem !important;
+        padding: 2rem 2rem !important;
+    }
+}
+
 @media (max-width: 992px) {
     .nav-menu-toggle {
         display: block;
@@ -7,5 +14,12 @@
     .nav-links-list,
     .nav-links-item {
         display: none;
+    }
+
+    main {
+        margin: 0 !important;
+        border-radius: 0 !important;
+        box-shadow: none !important;
+        padding: 1rem 1rem !important;
     }
 }

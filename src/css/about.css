@@ -15,6 +15,7 @@
     box-shadow: 0 25px 50px -7px rgba(0, 0, 0, .25);
     background-color: rgba(255, 255, 255, 1);
     padding-bottom: 1rem;
+    padding-right: 3rem;
 }
 
 .skills-cards {
@@ -39,6 +40,7 @@
 .skills-card-item {
     text-decoration: none;
     margin-left: 3rem;
+    margin-bottom: 0.5rem;
     display: inline-block;
     align-items: center;
     justify-content: center;
@@ -190,4 +192,26 @@
 
 .btn-button:hover {
     background-position: 0 100%;
+}
+
+@media (max-width: 992px) {
+    #about {
+        margin: 0rem 1rem 1rem;
+    }
+
+    #skills-content {
+        margin: 0 1rem;
+    }
+
+    .skills-card-container {
+        padding-right: 0.5rem;
+    }
+
+    .skills-card-item {
+        margin-left: 0.5rem;
+    }
+
+    .experience-container {
+        margin: 0 0.5rem;
+    }
 }

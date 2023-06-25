@@ -16,6 +16,10 @@
     color: var(--text-normal-color);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(242, 240, 238) !important;
 }
@@ -32,7 +36,7 @@ main {
     border-radius: .5rem;
     box-shadow: 0 25px 50px -12px rgba(0,0,0,.25);
     background-color: rgb(255, 255, 255) !important;
-    margin: 0rem 15rem 1.75rem 15rem;
+    margin: 0rem 10rem 1.75rem 10rem;
     padding: 2rem 5rem;
 }
 

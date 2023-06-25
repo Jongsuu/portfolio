@@ -29,11 +29,19 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     });
 }
 
+async function scrollNavbar(): Promise<void> {
+    $(window).on('scroll', async() => {
+        let header = $('header');
+        header.toggleClass('header-scrolled', $(window).scrollTop() > 20);
+    });
+}
+
 $(() => {
     console.info("utils.ts");
     let utils = new UtilsComponent();
 
     changeTranslationsEvent(utils);
+    scrollNavbar();
 
     setTimeout(() => { document.body.classList.add("show"); }, 300);
 });
