@@ -104,3 +104,12 @@ nav {
 .dropdown-item:hover {
     cursor: pointer;
 }
+
+#LanguageDropdown {
+    transition-duration: var(--transition-duration);
+}
+
+#LanguageDropdown:hover {
+    color: var(--text-hover-color);
+    transition-duration: var(--transition-duration);
+}

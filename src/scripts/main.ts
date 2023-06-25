@@ -22,7 +22,7 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
 
     setTimeout(() => {
         languageDropdownBtn.click()
-    }, 10);
+    }, 100);
 
     document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
         if (!item.id) {

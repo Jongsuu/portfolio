@@ -1,5 +1,5 @@
 #about {
-    margin: 0rem 3rem 1rem;
+    margin: 0rem 3rem;
 }
 
 #skills-content {
@@ -159,39 +159,22 @@
     margin-top: 1.5rem;
 }
 
-.btn-container {
-    width: fit-content;
+.btn-button {
     background-color: rgba(156, 32, 214, 0.75);
     border-radius: 0.1rem;
     padding: 0.5rem 1rem;
-    transform: scale(1);
-    transition-duration: 350ms;
-}
-
-.btn-container:hover {
-    transform: scale(1.05);
-    transition-duration: 350ms;
-}
-
-.btn-button {
+    border: none;
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: #fff !important;
     font-weight: 500;
     font-size: 18px;
-    border: none;
-    overflow: hidden;
-    background: linear-gradient(to right, rgb(247, 226, 32), rgb(247, 226, 32) 50%, #fff 50%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-size: 200% 100%;
-    background-position: 100%;
-    transition: background-position 350ms ease;
+    transition: transform 350ms ease;
+    transform: scale(1);
 }
 
 .btn-button:hover {
-    background-position: 0 100%;
+    transform: scale(1.05);
 }
 
 @media (max-width: 992px) {
@@ -207,8 +190,19 @@
         padding-right: 0.5rem;
     }
 
+    .skills-cards {
+        padding: 0.5rem 0.5rem;
+    }
+
     .skills-card-item {
-        margin-left: 0.5rem;
+        margin-left: 1rem;
+    }
+
+    .skills-card-item-img {
+        max-width: 2.5rem;
+        max-height: 2.5rem;
+        min-width: 1.5rem;
+        min-height: 1.5rem;
     }
 
     .experience-container {
