@@ -17,6 +17,13 @@ async function loadPageComponents(): Promise<void> {
 }
 
 async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
+    let languageDropdownBtn = document.querySelector<HTMLElement>("#LanguageDropdown");
+    languageDropdownBtn.click();
+
+    setTimeout(() => {
+        languageDropdownBtn.click()
+    }, 10);
+
     document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
         if (!item.id) {
             item.addEventListener("click", async () => {
