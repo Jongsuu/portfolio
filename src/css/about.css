@@ -1,5 +1,5 @@
 #about {
-    margin: 0rem 3rem;
+    margin: 0rem 3rem 1rem;
 }
 
 #skills-content {
@@ -139,6 +139,7 @@
 }
 
 .experience-technologies-item {
+    cursor: default;
     display: inline-block;
     border-radius: 10rem;
     background-color: rgba(156, 32, 214, 0.75);
@@ -150,4 +151,43 @@
 .experience-technologies-item-text {
     color: #fff;
     font-weight: 500;
+}
+
+#resume {
+    margin-top: 1.5rem;
+}
+
+.btn-container {
+    width: fit-content;
+    background-color: rgba(156, 32, 214, 0.75);
+    border-radius: 0.1rem;
+    padding: 0.5rem 1rem;
+    transform: scale(1);
+    transition-duration: 350ms;
+}
+
+.btn-container:hover {
+    transform: scale(1.05);
+    transition-duration: 350ms;
+}
+
+.btn-button {
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    overflow: hidden;
+    background: linear-gradient(to right, rgb(247, 226, 32), rgb(247, 226, 32) 50%, #fff 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+    transition: background-position 350ms ease;
+}
+
+.btn-button:hover {
+    background-position: 0 100%;
 }

@@ -8,6 +8,7 @@
         <title>About | Pau Pereira</title>
 
         <script type="module" src="/src/scripts/main.ts"></script>
+        <script type="module" src="/src/scripts/about.ts"></script>
 
         <link rel="stylesheet" href="/src/css/style.css" />
         <link rel="stylesheet" href="/src/css/about.css" />
@@ -237,15 +238,15 @@
                         <div class="experience-item">
 
                             <div class="experience-date-container">
-                                <span class="experience-date">January 2023 - Current</span>
+                                <span class="experience-date" i18n="about.experience.experience1.date"></span>
                             </div>
 
                             <div class="experience-content">
                                 <div class="experience-item-header">
 
                                     <p class="experience-company">DXC Technology</p>
-                                    <p class="experience-job-position">Fullstack Developer</p>
-                                    <p class="experience-job-situation mb-0">Full Time Remote</p>
+                                    <p class="experience-job-position" i18n="about.experience.experience1.jobPosition"></p>
+                                    <p class="experience-job-situation mb-0" i18n="about.experience.experience1.jobSituation"></p>
 
                                 </div>
 
@@ -300,12 +301,48 @@
 
                 </div>
 
+                <div id="resume">
+
+                    <div class="btn-container">
+                        <button i18n="about.downloadResume" class="btn-button" data-bs-toggle="modal" data-bs-target="#downloadResume"></button>
+                    </div>
+
+                </div>
+
             </section>
         </main>
 
         <footer>
 
         </footer>
+
+        <!-- Download resumé modal-->
+        <div class="modal fade" id="downloadResume" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="downloadResumeLabel">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" i18n="about.downloadResume"></h5>
+                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-footer justify-content-center">
+                        <div class="btn-container">
+                            <a i18n="about.resume.english" class="btn-button" href="/src/resume/curriculum_english.pdf" download></a>
+                        </div>
+                        <div class="btn-container">
+                            <a i18n="about.resume.spanish" class="btn-button" href="/src/resume/curriculum_spanish.pdf" download></a>
+                        </div>
+                        <div class="btn-container">
+                            <a i18n="about.resume.catalan" class="btn-button" href="/src/resume/curriculum_catalan.pdf" download></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
 
     </body>
 

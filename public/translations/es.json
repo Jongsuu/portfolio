@@ -18,7 +18,18 @@
                 "other": "Otras herramientas que uso"
             },
             "experience": {
-                "title": "Experiencia"
+                "title": "Experiencia",
+                "experience1": {
+                    "date": "Enero 2023 - Actualmente",
+                    "jobPosition": "Desarrollador Fullstack",
+                    "jobSituation": "Jornada completa - Teletrabajo"
+                }
+            },
+            "downloadResume": "Descargar mi Currículum",
+            "resume": {
+                "english": "Inglés",
+                "spanish": "Español",
+                "catalan": "Catalán"
             }
         },
         "services": {

@@ -18,7 +18,18 @@
                 "other": "Other tools I use"
             },
             "experience": {
-                "title": "Experience"
+                "title": "Experience",
+                "experience1": {
+                    "date": "January 2023 - Currently",
+                    "jobPosition": "Fullstack Developer",
+                    "jobSituation": "Full-time - Remote"
+                }
+            },
+            "downloadResume": "Download my Resumé",
+            "resume": {
+                "english": "English",
+                "spanish": "Spanish",
+                "catalan": "Catalan"
             }
         },
         "services": {

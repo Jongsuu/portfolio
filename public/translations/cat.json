@@ -18,7 +18,18 @@
                 "other": "Altres eines que utilitzo"
             },
             "experience": {
-                "title": "Experiència"
+                "title": "Experiència",
+                "experience1": {
+                    "date": "Gener 2023 - Actualment",
+                    "jobPosition": "Desenvolupador Fullstack",
+                    "jobSituation": "Jornada completa - Teletreball"
+                }
+            },
+            "downloadResume": "Descarregar el meu Currículum",
+            "resume": {
+                "english": "Anglès",
+                "spanish": "Espanyol",
+                "catalan": "Català"
             }
         },
         "services": {
