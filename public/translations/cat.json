@@ -25,7 +25,7 @@
                     "jobSituation": "Jornada completa - Teletreball"
                 }
             },
-            "downloadResume": "Descarregar el meu Currículum",
+            "downloadResume": "Mira el meu Currículum",
             "resume": {
                 "english": "Anglès",
                 "spanish": "Espanyol",
@@ -33,7 +33,67 @@
             }
         },
         "services": {
-
+            "title": "Què ofereixo",
+            "frontend": {
+                "title": "Serveis de frontend",
+                "web": {
+                    "title": "Aplicacions web atractives enfocades a l'usuari",
+                    "intro": "En el vertiginós panorama en línia, una aplicació web visualment atractiva i que funcioni sense problemes és crucial per atraure i retenir els usuaris. Com a desenvolupador frontend, m'especialitzo en crear interfícies d'usuari (UI) captivadores i millorar les experiències d'usuari (UX) per garantir que la vostra aplicació web es destaqui de la competència.",
+                    "text": "En aprofitar la meva experiència en el desenvolupament d'aplicacions web, puc fer realitat la vostra visió amb un disseny d'interfície optimitzat i receptiu. Ja sigui que necessiti una plataforma de comerç electrònic dinàmica, un lloc de xarxes socials interactiu o una aplicació web corporativa simplificada, compte amb les habilitats i el coneixement per oferir solucions personalitzades que s'alinein amb els seus objectius."
+                },
+                "desktop": {
+                    "title": "Potencia la productivitat i l'accessibilitat amb aplicacions d'escriptori",
+                    "intro": "A més de les aplicacions web, també destaco en el desenvolupament de solucions frontend per a aplicacions d'escriptori. Amb una àmplia experiència a WPF, puc crear aplicacions de Windows que s'executen sense problemes.",
+                    "text": "Des d'eines de productivitat fins a extensions d'escriptori, puc ajudar-lo a transformar les vostres idees en aplicacions d'escriptori fàcils d'usar que milloren l'eficiència del flux de treball i ofereixen una interfície d'usuari intuïtiva. En integrar tecnologies frontend modernes i adherir-me a les millors pràctiques de la indústria, m'asseguro que la seva aplicació descriptori sigui visualment atractiva, funcioni perfectament i compleixi amb les expectatives del seu públic objectiu."
+                },
+                "mobile": {
+                    "title": "Allibereu el poder de la seva aplicació d'Android",
+                    "intro": "Amb el creixement exponencial de la plataforma Android, és essencial comptar amb una interfície polida i intuïtiva per a la seva aplicació mòbil. Com a desenvolupador frontend experimentat per a aplicacions d'Android, tinc un profund coneixement de l'ecosistema d'Android i les últimes tecnologies com Kotlin i Android Jetpack Compose.",
+                    "text": "Ja sigui que necessiteu una aplicació de comerç electrònic atractiva, una plataforma d'entreteniment rica en multimèdia o una aplicació d'utilitat plena de funcions, tinc les habilitats per crear una interfície captivadora que captiva els usuaris i maximitza la retenció d'usuaris. Des de dissenys receptius fins a animacions fluides i interaccions fluides, m'asseguro que la seva aplicació d'Android ofereix una experiència d'usuari excepcional en diversos dispositius i mides de pantalla."
+                },
+                "offer": {
+                    "title": "Per què escollir-me com el teu desenvolupador frontend?",
+                    "intro": "Quan escull els meus serveis de desenvolupament frontend, pot esperar una associació enfocada a brindar resultats excepcionals. Heus aquí per què em destaco de la competència:",
+                    "reason1": "{b}Perícia i experiència:{/b} Tot i la meva recent incorporació al sector, he perfeccionat les meves habilitats per crear aplicacions visualment sorprenents i fàcils d'usar en diverses plataformes.",
+                    "reason2": "{b}Solucions a mida:{/b} Entenc que cada projecte és únic. Em prenc el temps per comprendre els seus requisits específics i oferir solucions personalitzades que s'alineen amb els seus objectius.",
+                    "reason3": "{b}Tecnologies d'avantguarda:{/b} Em mantinc al dia amb les darreres tendències, marcs i tecnologies frontend per garantir que les seves aplicacions es desenvolupin amb les eines més eficients i efectives disponibles.",
+                    "reason4": "{b}Atenció als detalls:{/b} Crec que cada píxel i cada interacció són importants. Paro una atenció meticulosa als detalls, assegurant-me que cada aspecte de la seva interfície estigui polit i sense problemes.",
+                    "reason5": "{b}Enfocament col·laboratiu:{/b} Valoro la comunicació oberta i la col·laboració. Al llarg del procés de desenvolupament, t'involucro en cada etapa, cercant retroalimentació i refinant el producte fins que superi les teves expectatives."
+                }
+            },
+            "backend": {
+                "title": "Serveis de backend",
+                "article1": {
+                    "title": "Creació de solucions backend escalables i segures",
+                    "intro": "Darrere de cada gran aplicació hi ha un poderós backend que maneja la gestió de dades, el processament i la lògica comercial. Com a desenvolupador backend, m'especialitzo en dissenyar i implementar solucions backend escalables, segures i d'alt rendiment que impulsen l'èxit de la seva aplicació.",
+                    "text": "Utilitzant tecnologies i frameworks líders a la indústria, com ASP.NET, puc crear APIs i microserveis sòlids que s'integren a la perfecció amb el seu frontend o aplicacions mòbils. Ja sigui que necessiteu una API RESTful per a la comunicació d'aplicacions mòbils o una arquitectura sofisticada del costat del servidor per a aplicacions web complexes, tinc l'experiència per oferir solucions personalitzades que s'alineen amb els seus objectius."
+                },
+                "article2": {
+                    "title": "Optimització del rendiment i eficiència",
+                    "intro": "Al panorama digital, on les expectatives dels usuaris quant a velocitat i capacitat de resposta són més altes que mai, un backend ben optimitzat és crucial per brindar experiències d'usuari excepcionals. Amb la meva experiència en l'optimització del rendiment i la gestió de bases de dades, puc ajustar els serveis de backend per garantir una velocitat, eficiència i escalabilitat òptimes.",
+                    "text": "En aprofitar els mecanismes d'emmagatzematge en memòria cau, les tècniques d'optimització de consultes i els dissenys de bases de dades eficients, puc millorar significativament el rendiment de la seva aplicació i reduir els temps de resposta. Ja sigui que es tracti de processament de dades a gran escala o interaccions en temps real, puc dissenyar i implementar solucions de backend que s'ajustin amb precisió per manejar les demandes de la seva aplicació."
+                },
+                "article3": {
+                    "title": "Protecció de les vostres dades i protecció de la privadesa de l'usuari",
+                    "intro": "La seguretat de les dades i la privadesa de l'usuari són primordials en el panorama digital actual, amb una preocupació creixent per les amenaces cibernètiques i les violacions de la privadesa. Com a desenvolupador backend, prioritzo la implementació de mesures de seguretat sòlides per protegir-ne l'aplicació i els usuaris.",
+                    "text": "M'adhereixo a les millors pràctiques de la indústria, incorporant-hi protocols d'autenticació segurs, tècniques d'encriptació i controls d'accés a dades per salvaguardar la informació confidencial. En implementar mesures de seguretat proactives i mantenir-me actualitzat sobre les últimes tendències de seguretat, m'asseguro que els seus serveis de backend proporcionin un entorn segur per a les vostres dades i usuaris."
+                },
+                "offer": {
+                    "title": "Per què escollir-me com el teu desenvolupador backend?",
+                    "intro": "Quan trieu els meus serveis de desenvolupament de backend, podeu esperar una associació enfocada a brindar resultats excepcionals. Heus aquí per què em destaco de la competència:",
+                    "reason1": "{b}Perícia i experiència:{/b} Tot i la meva recent incorporació al sector, tinc un profund coneixement de les tecnologies i els frameworks del costat del servidor, cosa que em permet dissenyar i implementar solucions sòlides per a diverses aplicacions.",
+                    "reason2": "{b}Escalabilitat i rendiment:{/b} M'especialitzo en la creació d'arquitectures de backend que es poden escalar sense problemes per gestionar l'augment del trànsit d'usuaris i el volum de dades i, alhora, garantir-ne un rendiment òptim.",
+                    "reason3": "{b}Seguretat de les dades:{/b} Dono prioritat a la implementació de mesures de seguretat sòlides per protegir la seva aplicació i les dades dels usuaris, seguint les pràctiques recomanades del sector i els estàndards de seguretat més recents.",
+                    "reason4": "{b}Enfocament col·laboratiu:{/b} Crec en la comunicació oberta i la col·laboració. Treballo en estreta col·laboració amb vostè durant tot el procés de desenvolupament, buscant la seva opinió i refinant la solució de backend per alinear-la amb els seus requisits.",
+                    "reason5": "{b}Resolució eficient de problemes:{/b} Tinc una forta mentalitat de resolució de problemes, cosa que em permet abordar desafiaments complexos de backend i trobar solucions eficients i efectives per satisfer les necessitats de la seva aplicació."
+                }
+            },
+            "contact": {
+                "title": "Transformem les vostres idees en experiències d'usuari captivadores amb un backend potent i robust",
+                "intro": "Està llest per desbloquejar el potencial de les aplicacions? Està llest per optimitzar el rendiment de la seva aplicació, millorar la seguretat i desbloquejar tot el potencial dels seus serveis de backend?",
+                "intro2": "Associeu-vos amb mi i junts crearem aplicacions excepcionals i fàcils d'usar juntament amb un backend robust, escalable i segur que impulsa l'èxit de la seva aplicació. Contacti'm avui per discutir el seu projecte i explorar com els meus serveis de desenvolupament poden impulsar-ne l'aplicació.",
+                "action": "Posa't en contacte"
+            }
         },
         "contact": {
 

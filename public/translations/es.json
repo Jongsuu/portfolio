@@ -25,7 +25,7 @@
                     "jobSituation": "Jornada completa - Teletrabajo"
                 }
             },
-            "downloadResume": "Descargar mi Currículum",
+            "downloadResume": "Mira mi Currículum",
             "resume": {
                 "english": "Inglés",
                 "spanish": "Español",
@@ -33,7 +33,67 @@
             }
         },
         "services": {
-
+            "title": "Qué ofrezco",
+            "frontend": {
+                "title": "Servicios de frontend",
+                "web": {
+                    "title": "Aplicaciones web atractivas enfocadas en el usuario",
+                    "intro": "En el vertiginoso panorama en línea, una aplicación web visualmente atractiva y que funcione sin problemas es crucial para atraer y retener a los usuarios. Como desarrollador frontend, me especializo en crear interfaces de usuario (UI) cautivadoras y mejorar las experiencias de usuario (UX) para garantizar que su aplicación web se destaque de la competencia.",
+                    "text": "Al aprovechar mi experiencia en el desarrollo de aplicaciones web, puedo hacer realidad su visión con un diseño de interfaz optimizado y receptivo. Ya sea que necesite una plataforma de comercio electrónico dinámica, un sitio de redes sociales interactivo o una aplicación web corporativa simplificada, cuento con las habilidades y el conocimiento para brindar soluciones personalizadas que se alineen con sus objetivos."
+                },
+                "desktop": {
+                    "title": "Potencia la productividad y la accesibilidad con aplicaciones de escritorio",
+                    "intro": "Además de las aplicaciones web, también destaco en el desarrollo de soluciones frontend para aplicaciones de escritorio. Con una amplia experiencia en WPF, puedo crear aplicaciones de Windows que se ejecutan sin problemas.",
+                    "text": "Desde herramientas de productividad hasta extensiones de escritorio, puedo ayudarlo a transformar sus ideas en aplicaciones de escritorio fáciles de usar que mejoran la eficiencia del flujo de trabajo y brindan una interfaz de usuario intuitiva. Al integrar tecnologías frontend modernas y adherirme a las mejores prácticas de la industria, me aseguro de que su aplicación de escritorio sea visualmente atractiva, funcione perfectamente y cumpla con las expectativas de su público objetivo."
+                },
+                "mobile": {
+                    "title": "Libere el poder de su aplicación de Android",
+                    "intro": "Con el crecimiento exponencial de la plataforma Android, es esencial contar con una interfaz pulida e intuitiva para su aplicación móvil. Como desarrollador frontend experimentado para aplicaciones de Android, poseo un profundo conocimiento del ecosistema de Android y las últimas tecnologías como Kotlin y Android Jetpack Compose.",
+                    "text": "Ya sea que necesite una aplicación de comercio electrónico atractiva, una plataforma de entretenimiento rica en multimedia o una aplicación de utilidad repleta de funciones, tengo las habilidades para crear una interfaz cautivadora que cautiva a los usuarios y maximiza la retención de usuarios. Desde diseños receptivos hasta animaciones fluidas e interacciones fluidas, me aseguro de que su aplicación de Android brinde una experiencia de usuario excepcional en varios dispositivos y tamaños de pantalla."
+                },
+                "offer": {
+                    "title": "¿Por qué elegirme como tu desarrollador frontend?",
+                    "intro": "Cuando elige mis servicios de desarrollo frontend, puede esperar una asociación enfocada en brindar resultados excepcionales. He aquí por qué me destaco de la competencia:",
+                    "reason1": "{b}Pericia y experiencia:{/b} A pesar de mi reciente incorporación en el sector, he perfeccionado mis habilidades para crear aplicaciones visualmente sorprendentes y fáciles de usar en varias plataformas.",
+                    "reason2": "{b}Soluciones a medida:{/b} Entiendo que cada proyecto es único. Me tomo el tiempo para comprender sus requisitos específicos y brindar soluciones personalizadas que se alinean con sus objetivos.",
+                    "reason3": "{b}Tecnologías de vanguardia:{/b} Me mantengo al día con las últimas tendencias, marcos y tecnologías frontend para garantizar que sus aplicaciones se desarrollen con las herramientas más eficientes y efectivas disponibles.",
+                    "reason4": "{b}Atención a los detalles:{/b} Creo que cada píxel y cada interacción son importantes. Presto una atención meticulosa a los detalles, asegurándome de que cada aspecto de su interfaz esté pulido y sin problemas.",
+                    "reason5": "{b}Enfoque colaborativo:{/b} Valoro la comunicación abierta y la colaboración. A lo largo del proceso de desarrollo, te involucro en cada etapa, buscando retroalimentación y refinando el producto hasta que supere tus expectativas."
+                }
+            },
+            "backend": {
+                "title": "Servicios de backend",
+                "article1": {
+                    "title": "Creación de soluciones backend escalables y seguras",
+                    "intro": "Detrás de cada gran aplicación se encuentra un poderoso backend que maneja la gestión de datos, el procesamiento y la lógica comercial. Como desarrollador backend, me especializo en diseñar e implementar soluciones backend escalables, seguras y de alto rendimiento que impulsan el éxito de su aplicación.",
+                    "text": "Utilizando tecnologías y frameworks líderes en la industria, como ASP.NET, puedo crear APIs y microservicios sólidos que se integran a la perfección con su frontend o aplicaciones móviles. Ya sea que necesite una API RESTful para la comunicación de aplicaciones móviles o una arquitectura sofisticada del lado del servidor para aplicaciones web complejas, tengo la experiencia para brindar soluciones personalizadas que se alinean con sus objetivos."
+                },
+                "article2": {
+                    "title": "Optimización del rendimiento y la eficiencia",
+                    "intro": "En el panorama digital, donde las expectativas de los usuarios en cuanto a velocidad y capacidad de respuesta son más altas que nunca, un backend bien optimizado es crucial para brindar experiencias de usuario excepcionales. Con mi experiencia en la optimización del rendimiento y la gestión de bases de datos, puedo ajustar sus servicios de backend para garantizar una velocidad, eficiencia y escalabilidad óptimas.",
+                    "text": "Al aprovechar los mecanismos de almacenamiento en caché, las técnicas de optimización de consultas y los diseños de bases de datos eficientes, puedo mejorar significativamente el rendimiento de su aplicación y reducir los tiempos de respuesta. Ya sea que se trate de procesamiento de datos a gran escala o de interacciones en tiempo real, puedo diseñar e implementar soluciones de backend que se ajusten con precisión para manejar las demandas de su aplicación."
+                },
+                "article3": {
+                    "title": "Protección de sus datos y protección de la privacidad del usuario",
+                    "intro": "La seguridad de los datos y la privacidad del usuario son primordiales en el panorama digital actual, con una creciente preocupación por las amenazas cibernéticas y las violaciones de la privacidad. Como desarrollador backend, priorizo la implementación de medidas de seguridad sólidas para proteger su aplicación y sus usuarios.",
+                    "text": "Me adhiero a las mejores prácticas de la industria, incorporando protocolos de autenticación seguros, técnicas de encriptación y controles de acceso a datos para salvaguardar la información confidencial. Al implementar medidas de seguridad proactivas y mantenerme actualizado sobre las últimas tendencias de seguridad, me aseguro de que sus servicios de backend proporcionen un entorno seguro para sus datos y usuarios."
+                },
+                "offer": {
+                    "title": "¿Por qué elegirme como tu desarrollador backend?",
+                    "intro": "Cuando elige mis servicios de desarrollo de backend, puede esperar una asociación enfocada en brindar resultados excepcionales. He aquí por qué me destaco de la competencia:",
+                    "reason1": "{b}Pericia y experiencia:{/b} A pesar de mi reciente incorporación en el sector, poseo un profundo conocimiento de las tecnologías y los frameworks del lado del servidor, lo que me permite diseñar e implementar soluciones sólidas para diversas aplicaciones.",
+                    "reason2": "{b}Escalabilidad y rendimiento:{/b} Me especializo en la creación de arquitecturas de backend que se pueden escalar sin problemas para gestionar el aumento del tráfico de usuarios y el volumen de datos y, al mismo tiempo, garantizar un rendimiento óptimo.",
+                    "reason3": "{b}Seguridad de los datos:{/b} Doy prioridad a la implementación de medidas de seguridad sólidas para proteger su aplicación y los datos de los usuarios, siguiendo las prácticas recomendadas del sector y los estándares de seguridad más recientes.",
+                    "reason4": "{b}Enfoque colaborativo:{/b} Creo en la comunicación abierta y la colaboración. Trabajo en estrecha colaboración con usted durante todo el proceso de desarrollo, buscando su opinión y refinando la solución de backend para alinearla con sus requisitos.",
+                    "reason5": "{b}Resolución eficiente de problemas:{/b} Tengo una fuerte mentalidad de resolución de problemas, lo que me permite abordar desafíos complejos de backend y encontrar soluciones eficientes y efectivas para satisfacer las necesidades de su aplicación."
+                }
+            },
+            "contact": {
+                "title": "Transformemos sus ideas en experiencias de usuario cautivadoras con un backend potente y robusto",
+                "intro": "¿Está listo para desbloquear el potencial de sus aplicaciones? ¿Está listo para optimizar el rendimiento de su aplicación, mejorar la seguridad y desbloquear todo el potencial de sus servicios de backend?",
+                "intro2": "Asóciese conmigo y juntos crearemos aplicaciones excepcionales y fáciles de usar junto con un backend robusto, escalable y seguro que impulsa el éxito de su aplicación. Contácteme hoy para discutir su proyecto y explorar cómo mis servicios de desarrollo pueden impulsar su aplicación.",
+                "action": "Ponte en contacto"
+            }
         },
         "contact": {
 

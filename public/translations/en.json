@@ -25,7 +25,7 @@
                     "jobSituation": "Full-time - Remote"
                 }
             },
-            "downloadResume": "Download my Resumé",
+            "downloadResume": "Check out my Resumé",
             "resume": {
                 "english": "English",
                 "spanish": "Spanish",
@@ -42,19 +42,19 @@
                     "text": "By leveraging my expertise in the development of web applications, I can bring your vision to life with a responsive and optimized frontend design. Whether you require a dynamic e-commerce platform, an interactive social networking site, or a streamlined corporate web application, I am equipped with the skills and knowledge to deliver tailored solutions that align with your objectives."
                 },
                 "desktop": {
-                    "title": "Empowering Productivity and Accessibility with Frontend Desktop Apps",
+                    "title": "Empowering Productivity and Accessibility with Desktop Apps",
                     "intro": "In addition to web applications, I also excel in developing frontend solutions for desktop applications. With extensive experience in WPF, I can create Windows apps that run seamlessly.",
                     "text": "From productivity tools to desktop extensions, I can help transform your ideas into user-friendly desktop apps that enhance workflow efficiency and provide an intuitive user interface. By integrating modern frontend technologies and adhering to industry best practices, I ensure that your desktop app is visually appealing, performs flawlessly, and meets the expectations of your target audience."
                 },
                 "mobile": {
-                    "title": "Unleashing the Power of Frontend for Android Apps",
+                    "title": "Unleashing the Power of your Android App",
                     "intro": "With the exponential growth of the Android platform, having a polished and intuitive frontend for your mobile application is essential. As an experienced frontend developer for Android apps, I possess a deep understanding of the Android ecosystem and the latest technologies such as Kotlin and Android Jetpack Compose.",
                     "text": "Whether you need an engaging e-commerce app, a multimedia-rich entertainment platform, or a feature-packed utility application, I have the skills to create a captivating frontend that captivates users and maximizes user retention. From responsive layouts to fluid animations and seamless interactions, I ensure that your Android app provides an exceptional user experience across various devices and screen sizes."
                 },
                 "offer": {
                     "title": "Why Choose Me as Your Frontend Developer?",
                     "intro": "When you choose my frontend development services, you can expect a partnership focused on delivering exceptional results. Here's why I stand out from the competition:",
-                    "reason1": "{b}Expertise and Experience:{/b} With years of experience in frontend development, I have honed my skills in creating visually stunning and user-friendly applications across various platforms.",
+                    "reason1": "{b}Expertise and Experience:{/b} Despite my recent incorporation to the sector, I have honed my skills in creating visually stunning and user-friendly applications across various platforms.",
                     "reason2": "{b}Tailored Solutions:{/b} I understand that each project is unique. I take the time to comprehend your specific requirements and provide customized solutions that align with your goals.",
                     "reason3": "{b}Cutting-Edge Technologies:{/b} I stay up-to-date with the latest frontend technologies, frameworks, and trends to ensure that your applications are developed using the most efficient and effective tools available.",
                     "reason4": "{b}Attention to Detail:{/b} I believe that every pixel and every interaction matters. I pay meticulous attention to detail, ensuring that every aspect of your frontend is polished and seamless.",
@@ -90,9 +90,14 @@
                     "reason4": "{b}Collaborative Approach:{/b} I believe in open communication and collaboration. I work closely with you throughout the development process, seeking your input and refining the backend solution to align with your requirements.",
                     "reason5": "{b}Efficient Problem Solving:{/b} I have a strong problem-solving mindset, allowing me to tackle complex backend challenges and find efficient and effective solutions to meet your application's needs.",
                     "conclusion": "Let's Unlock the Potential of Your Backend Services",
-                    "conclusionText": "Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services? Partner with me, and together we can build robust, scalable, and secure backend solutions that power your application's success. Contact me today to discuss your project and explore how my backend development services can drive your application forward.",
-                    "action": "Get in touch"
+                    "conclusionText": "Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services? Partner with me, and together we can build robust, scalable, and secure backend solutions that power your application's success. Contact me today to discuss your project and explore how my backend development services can drive your application forward."
                 }
+            },
+            "contact": {
+                "title": "Let's Transform Your Ideas into Captivating User Experiences with a Powerful and Robust Backend",
+                "intro": "Are you ready to unlock the potential of your applications? Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services?",
+                "intro2": "Partner with me, and together we will create exceptional, user-friendly apps coupled with a robust, scalable and secure backend that powers your application's success. Contact me today to discuss your project and explore how my development services can drive your application forward.",
+                "action": "Get in touch"
             }
         },
         "contact": {
