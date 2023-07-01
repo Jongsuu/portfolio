@@ -80,10 +80,12 @@ export class UtilsComponent {
         document.querySelectorAll("[i18n]").forEach(item => {
             let i18nId = item.getAttribute("i18n");
 
+            let translation = _this.i18n.t(i18nId).replace(/{/g, "<").replace(/}/g, ">");
+
             if (item.tagName === "INPUT")
-                item.setAttribute("placeholder", _this.i18n.t(i18nId));
+                item.setAttribute("placeholder", translation);
             else
-                item.innerHTML = _this.i18n.t(i18nId);
+                item.innerHTML = translation;
         });
     }
 }

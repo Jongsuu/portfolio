@@ -33,7 +33,67 @@
             }
         },
         "services": {
-
+            "title": "What I offer",
+            "frontend": {
+                "title": "Frontend services",
+                "web": {
+                    "title": "Engaging Web Apps with a User-Focused Approach",
+                    "intro": "In the fast-paced online landscape, a visually appealing and seamlessly functioning web application is crucial for attracting and retaining users. As a frontend developer, I specialize in crafting captivating user interfaces (UI) and enhancing user experiences (UX) to ensure that your web app stands out from the competition.",
+                    "text": "By leveraging my expertise in the development of web applications, I can bring your vision to life with a responsive and optimized frontend design. Whether you require a dynamic e-commerce platform, an interactive social networking site, or a streamlined corporate web application, I am equipped with the skills and knowledge to deliver tailored solutions that align with your objectives."
+                },
+                "desktop": {
+                    "title": "Empowering Productivity and Accessibility with Frontend Desktop Apps",
+                    "intro": "In addition to web applications, I also excel in developing frontend solutions for desktop applications. With extensive experience in WPF, I can create Windows apps that run seamlessly.",
+                    "text": "From productivity tools to desktop extensions, I can help transform your ideas into user-friendly desktop apps that enhance workflow efficiency and provide an intuitive user interface. By integrating modern frontend technologies and adhering to industry best practices, I ensure that your desktop app is visually appealing, performs flawlessly, and meets the expectations of your target audience."
+                },
+                "mobile": {
+                    "title": "Unleashing the Power of Frontend for Android Apps",
+                    "intro": "With the exponential growth of the Android platform, having a polished and intuitive frontend for your mobile application is essential. As an experienced frontend developer for Android apps, I possess a deep understanding of the Android ecosystem and the latest technologies such as Kotlin and Android Jetpack Compose.",
+                    "text": "Whether you need an engaging e-commerce app, a multimedia-rich entertainment platform, or a feature-packed utility application, I have the skills to create a captivating frontend that captivates users and maximizes user retention. From responsive layouts to fluid animations and seamless interactions, I ensure that your Android app provides an exceptional user experience across various devices and screen sizes."
+                },
+                "offer": {
+                    "title": "Why Choose Me as Your Frontend Developer?",
+                    "intro": "When you choose my frontend development services, you can expect a partnership focused on delivering exceptional results. Here's why I stand out from the competition:",
+                    "reason1": "{b}Expertise and Experience:{/b} With years of experience in frontend development, I have honed my skills in creating visually stunning and user-friendly applications across various platforms.",
+                    "reason2": "{b}Tailored Solutions:{/b} I understand that each project is unique. I take the time to comprehend your specific requirements and provide customized solutions that align with your goals.",
+                    "reason3": "{b}Cutting-Edge Technologies:{/b} I stay up-to-date with the latest frontend technologies, frameworks, and trends to ensure that your applications are developed using the most efficient and effective tools available.",
+                    "reason4": "{b}Attention to Detail:{/b} I believe that every pixel and every interaction matters. I pay meticulous attention to detail, ensuring that every aspect of your frontend is polished and seamless.",
+                    "reason5": "{b}Collaborative Approach:{/b} I value open communication and collaboration. Throughout the development process, I involve you in every stage, seeking feedback and refining the product until it exceeds your expectations.",
+                    "conclusion": "Let's Transform Your Ideas into Captivating Frontend Experiences",
+                    "conclusionText": "Are you ready to unlock the potential of your frontend applications? Partner with me, and together we can create exceptional web apps, desktop apps, and Android apps that delight users and drive.",
+                    "action": "Get in touch"
+                }
+            },
+            "backend": {
+                "title": "Backend services",
+                "article1": {
+                    "title": "Creating Scalable and Secure Backend Solutions",
+                    "intro": "Behind every great application lies a powerful backend that handles data management, processing, and business logic. As a backend developer, I specialize in designing and implementing scalable, secure, and high-performance backend solutions that drive your application's success.",
+                    "text": "Using industry-leading technologies and frameworks such as ASP.NET, I can build robust APIs and microservices that seamlessly integrate with your frontend or mobile applications. Whether you require a RESTful API for mobile app communication or a sophisticated server-side architecture for complex web applications, I have the expertise to deliver tailored solutions that align with your objectives."
+                },
+                "article2": {
+                    "title": "Optimizing Performance and Efficiency",
+                    "intro": "In the digital landscape, where user expectations for speed and responsiveness are higher than ever, a well-optimized backend is crucial for delivering exceptional user experiences. With my expertise in performance optimization and database management, I can fine-tune your backend services to ensure optimal speed, efficiency, and scalability.",
+                    "text": "By leveraging caching mechanisms, query optimization techniques, and efficient database designs, I can significantly enhance your application's performance and reduce response times. Whether you're dealing with large-scale data processing or real-time interactions, I can design and implement backend solutions that are finely tuned to handle the demands of your application."
+                },
+                "article3": {
+                    "title": "Securing Your Data and Protecting User Privacy",
+                    "intro": "Data security and user privacy are paramount in today's digital landscape, with increasing concerns over cyber threats and privacy breaches. As a backend developer, I prioritize the implementation of robust security measures to protect your application and its users.",
+                    "text": "I adhere to industry best practices, incorporating secure authentication protocols, encryption techniques, and data access controls to safeguard sensitive information. By implementing proactive security measures and staying updated on the latest security trends, I ensure that your backend services provide a safe and secure environment for your data and users."
+                },
+                "offer": {
+                    "title": "Why Choose Me as Your Backend Developer?",
+                    "intro": "When you choose my backend development services, you can expect a partnership focused on delivering exceptional results. Here's why I stand out from the competition:",
+                    "reason1": "{b}Expertise and Experience:{/b} With years of experience in backend development, I possess a deep understanding of server-side technologies and frameworks, enabling me to design and implement robust solutions for various applications.",
+                    "reason2": "{b}Scalability and Performance:{/b} I specialize in building backend architectures that can scale seamlessly to handle increased user traffic and data volume while ensuring optimal performance.",
+                    "reason3": "{b}Data Security:{/b} I prioritize the implementation of robust security measures to protect your application and user data, adhering to industry best practices and the latest security standards.",
+                    "reason4": "{b}Collaborative Approach:{/b} I believe in open communication and collaboration. I work closely with you throughout the development process, seeking your input and refining the backend solution to align with your requirements.",
+                    "reason5": "{b}Efficient Problem Solving:{/b} I have a strong problem-solving mindset, allowing me to tackle complex backend challenges and find efficient and effective solutions to meet your application's needs.",
+                    "conclusion": "Let's Unlock the Potential of Your Backend Services",
+                    "conclusionText": "Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services? Partner with me, and together we can build robust, scalable, and secure backend solutions that power your application's success. Contact me today to discuss your project and explore how my backend development services can drive your application forward.",
+                    "action": "Get in touch"
+                }
+            }
         },
         "contact": {
 
