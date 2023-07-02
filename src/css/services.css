@@ -3,6 +3,12 @@
 }
 
 .service-title {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+
+}
+
+.service-subtitle {
     cursor: default;
     margin: 0;
     width: fit-content;
@@ -66,10 +72,10 @@
     position: relative;
 }
 
-#contactServices {
+#servicesAction {
     position: absolute;
     bottom: 0;
-    left: 40%;
+    left: 25%;
 }
 
 .service-contact-img {
@@ -103,7 +109,7 @@
         width: 40%;
     }
 
-    #contactServices {
+    #servicesAction {
         position: static;
     }
 
@@ -118,11 +124,11 @@
     }
 
     .service-contact-text {
-        width: 50%;
+        width: 60%;
     }
 
     .service-contact-img {
-        width: 50%;
+        width: 40%;
     }
 }
 

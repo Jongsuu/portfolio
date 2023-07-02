@@ -4,10 +4,11 @@
             "about": "Sobre mi",
             "services": "Serveis",
             "projects": "Projectes",
-            "contact": "Contacta'm"
+            "contact": "Contacte"
         },
         "home": {
-            "welcomeMessage": "Hola"
+            "welcomeMessage": "Hola",
+            "navServices": "Els meus serveis"
         },
         "about": {
             "title": "Sobre mi",
@@ -79,7 +80,7 @@
                     "text": "M'adhereixo a les millors pràctiques de la indústria, incorporant-hi protocols d'autenticació segurs, tècniques d'encriptació i controls d'accés a dades per salvaguardar la informació confidencial. En implementar mesures de seguretat proactives i mantenir-me actualitzat sobre les últimes tendències de seguretat, m'asseguro que els seus serveis de backend proporcionin un entorn segur per a les vostres dades i usuaris."
                 },
                 "offer": {
-                    "title": "Per què escollir-me com el teu desenvolupador backend?",
+                    "title": "Per què escollir-me com el vostre desenvolupador backend?",
                     "intro": "Quan trieu els meus serveis de desenvolupament de backend, podeu esperar una associació enfocada a brindar resultats excepcionals. Heus aquí per què em destaco de la competència:",
                     "reason1": "{b}Perícia i experiència:{/b} Tot i la meva recent incorporació al sector, tinc un profund coneixement de les tecnologies i els frameworks del costat del servidor, cosa que em permet dissenyar i implementar solucions sòlides per a diverses aplicacions.",
                     "reason2": "{b}Escalabilitat i rendiment:{/b} M'especialitzo en la creació d'arquitectures de backend que es poden escalar sense problemes per gestionar l'augment del trànsit d'usuaris i el volum de dades i, alhora, garantir-ne un rendiment òptim.",
@@ -91,8 +92,10 @@
             "contact": {
                 "title": "Transformem les vostres idees en experiències d'usuari captivadores amb un backend potent i robust",
                 "intro": "Està llest per desbloquejar el potencial de les aplicacions? Està llest per optimitzar el rendiment de la seva aplicació, millorar la seguretat i desbloquejar tot el potencial dels seus serveis de backend?",
-                "intro2": "Associeu-vos amb mi i junts crearem aplicacions excepcionals i fàcils d'usar juntament amb un backend robust, escalable i segur que impulsa l'èxit de la seva aplicació. Contacti'm avui per discutir el seu projecte i explorar com els meus serveis de desenvolupament poden impulsar-ne l'aplicació.",
-                "action": "Posa't en contacte"
+                "text": "Associeu-vos amb mi i junts crearem aplicacions excepcionals i fàcils d'usar juntament amb un backend robust, escalable i segur que impulsa l'èxit de la seva aplicació.",
+                "contactMessage": "Contacti'm avui per discutir el seu projecte i explorar com els meus serveis de desenvolupament poden impulsar-ne l'aplicació.",
+                "action": "Contacta'm",
+                "seeWork": "Veure la meva feina"
             }
         },
         "contact": {

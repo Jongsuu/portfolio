@@ -84,13 +84,15 @@
         <main>
             <section id="home" style="margin-bottom: 2000px;">
                 <h1 i18n="home.welcomeMessage"></h1>
-                <a href="#services">Watch services</a>
+                <div class="outline-button-container">
+                    <a class="outline-button" i18n="home.navServices" href="#services"></a>
+                </div>
             </section>
             <section id="services">
 
-                <h2 i18n="services.title"></h2>
+                <h1 i18n="services.title" class="service-title"></h1>
 
-                <h4 i18n="services.frontend.title" class="service-title"></h3>
+                <h3 i18n="services.frontend.title" class="service-subtitle"></h3>
 
                 <div>
                     <div class="service-container">
@@ -137,7 +139,7 @@
                     </div>
                 </div>
 
-                <h4 i18n="services.backend.title" class="service-title"></h3>
+                <h3 i18n="services.backend.title" class="service-subtitle"></h3>
 
                 <div>
                     <div class="service-container">
@@ -192,12 +194,16 @@
 
                             <div class="service-contact-text">
                                 <p i18n="services.contact.intro"></p>
-                                <p i18n="services.contact.intro2"></p>
+                                <p i18n="services.contact.text"></p>
+                                <p i18n="services.contact.contactMessage"></p>
 
-                                <div id="contactServices">
+                                <div id="servicesAction">
                                     <div class="d-flex justify-content-center">
-                                        <div class="outline-button-container">
+                                        <div class="outline-button-container" style="margin-right: 1rem;">
                                             <a class="outline-button" i18n="services.contact.action" href="mailto:paupereirallobet@gmail.com"></a>
+                                        </div>
+                                        <div class="outline-button-container">
+                                            <a class="outline-button" i18n="services.contact.seeWork" href="/projects"></a>
                                         </div>
                                     </div>
                                 </div>

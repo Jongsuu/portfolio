@@ -4,10 +4,11 @@
             "about": "About",
             "services": "Services",
             "projects": "Projects",
-            "contact": "Contact me"
+            "contact": "Contact"
         },
         "home": {
-            "welcomeMessage": "Hello"
+            "welcomeMessage": "Hello",
+            "navServices": "My services"
         },
         "about": {
             "title": "About",
@@ -60,8 +61,7 @@
                     "reason4": "{b}Attention to detail:{/b} I believe that every pixel and every interaction matters. I pay meticulous attention to detail, ensuring that every aspect of your frontend is polished and seamless.",
                     "reason5": "{b}Collaborative approach:{/b} I value open communication and collaboration. Throughout the development process, I involve you in every stage, seeking feedback and refining the product until it exceeds your expectations.",
                     "conclusion": "Let's Transform Your Ideas into Captivating Frontend Experiences",
-                    "conclusionText": "Are you ready to unlock the potential of your frontend applications? Partner with me, and together we can create exceptional web apps, desktop apps, and Android apps that delight users and drive.",
-                    "action": "Get in touch"
+                    "conclusionText": "Are you ready to unlock the potential of your frontend applications? Partner with me, and together we can create exceptional web apps, desktop apps, and Android apps that delight users and drive."
                 }
             },
             "backend": {
@@ -88,16 +88,16 @@
                     "reason2": "{b}Scalability and performance:{/b} I specialize in building backend architectures that can scale seamlessly to handle increased user traffic and data volume while ensuring optimal performance.",
                     "reason3": "{b}Data security:{/b} I prioritize the implementation of robust security measures to protect your application and user data, adhering to industry best practices and the latest security standards.",
                     "reason4": "{b}Collaborative approach:{/b} I believe in open communication and collaboration. I work closely with you throughout the development process, seeking your input and refining the backend solution to align with your requirements.",
-                    "reason5": "{b}Efficient problem solving:{/b} I have a strong problem-solving mindset, allowing me to tackle complex backend challenges and find efficient and effective solutions to meet your application's needs.",
-                    "conclusion": "Let's Unlock the Potential of Your Backend Services",
-                    "conclusionText": "Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services? Partner with me, and together we can build robust, scalable, and secure backend solutions that power your application's success. Contact me today to discuss your project and explore how my backend development services can drive your application forward."
+                    "reason5": "{b}Efficient problem solving:{/b} I have a strong problem-solving mindset, allowing me to tackle complex backend challenges and find efficient and effective solutions to meet your application's needs."
                 }
             },
             "contact": {
                 "title": "Let's Transform Your Ideas into Captivating User Experiences with a Powerful and Robust Backend",
                 "intro": "Are you ready to unlock the potential of your applications? Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services?",
-                "intro2": "Partner with me, and together we will create exceptional, user-friendly apps coupled with a robust, scalable and secure backend that powers your application's success. Contact me today to discuss your project and explore how my development services can drive your application forward.",
-                "action": "Get in touch"
+                "text": "Partner with me, and together we will create exceptional, user-friendly apps coupled with a robust, scalable and secure backend that powers your application's success.",
+                "contactMessage": "Contact me today to discuss your project and explore how my development services can drive your application forward.",
+                "action": "Get in touch",
+                "seeWork": "See my work"
             }
         },
         "contact": {

@@ -4,10 +4,11 @@
             "about": "Sobre mi",
             "services": "Servicios",
             "projects": "Proyectos",
-            "contact": "Contáctame"
+            "contact": "Contacto"
         },
         "home": {
-            "welcomeMessage": "Hola"
+            "welcomeMessage": "Hola",
+            "navServices": "Mis servicios"
         },
         "about": {
             "title": "Sobre mi",
@@ -52,7 +53,7 @@
                     "text": "Ya sea que necesite una aplicación de comercio electrónico atractiva, una plataforma de entretenimiento rica en multimedia o una aplicación de utilidad repleta de funciones, tengo las habilidades para crear una interfaz cautivadora que cautiva a los usuarios y maximiza la retención de usuarios. Desde diseños receptivos hasta animaciones fluidas e interacciones fluidas, me aseguro de que su aplicación de Android brinde una experiencia de usuario excepcional en varios dispositivos y tamaños de pantalla."
                 },
                 "offer": {
-                    "title": "¿Por qué elegirme como tu desarrollador frontend?",
+                    "title": "¿Por qué elegirme como vuestro desarrollador frontend?",
                     "intro": "Cuando elige mis servicios de desarrollo frontend, puede esperar una asociación enfocada en brindar resultados excepcionales. He aquí por qué me destaco de la competencia:",
                     "reason1": "{b}Pericia y experiencia:{/b} A pesar de mi reciente incorporación en el sector, he perfeccionado mis habilidades para crear aplicaciones visualmente sorprendentes y fáciles de usar en varias plataformas.",
                     "reason2": "{b}Soluciones a medida:{/b} Entiendo que cada proyecto es único. Me tomo el tiempo para comprender sus requisitos específicos y brindar soluciones personalizadas que se alinean con sus objetivos.",
@@ -79,7 +80,7 @@
                     "text": "Me adhiero a las mejores prácticas de la industria, incorporando protocolos de autenticación seguros, técnicas de encriptación y controles de acceso a datos para salvaguardar la información confidencial. Al implementar medidas de seguridad proactivas y mantenerme actualizado sobre las últimas tendencias de seguridad, me aseguro de que sus servicios de backend proporcionen un entorno seguro para sus datos y usuarios."
                 },
                 "offer": {
-                    "title": "¿Por qué elegirme como tu desarrollador backend?",
+                    "title": "¿Por qué elegirme como vuestro desarrollador backend?",
                     "intro": "Cuando elige mis servicios de desarrollo de backend, puede esperar una asociación enfocada en brindar resultados excepcionales. He aquí por qué me destaco de la competencia:",
                     "reason1": "{b}Pericia y experiencia:{/b} A pesar de mi reciente incorporación en el sector, poseo un profundo conocimiento de las tecnologías y los frameworks del lado del servidor, lo que me permite diseñar e implementar soluciones sólidas para diversas aplicaciones.",
                     "reason2": "{b}Escalabilidad y rendimiento:{/b} Me especializo en la creación de arquitecturas de backend que se pueden escalar sin problemas para gestionar el aumento del tráfico de usuarios y el volumen de datos y, al mismo tiempo, garantizar un rendimiento óptimo.",
@@ -91,8 +92,10 @@
             "contact": {
                 "title": "Transformemos sus ideas en experiencias de usuario cautivadoras con un backend potente y robusto",
                 "intro": "¿Está listo para desbloquear el potencial de sus aplicaciones? ¿Está listo para optimizar el rendimiento de su aplicación, mejorar la seguridad y desbloquear todo el potencial de sus servicios de backend?",
-                "intro2": "Asóciese conmigo y juntos crearemos aplicaciones excepcionales y fáciles de usar junto con un backend robusto, escalable y seguro que impulsa el éxito de su aplicación. Contácteme hoy para discutir su proyecto y explorar cómo mis servicios de desarrollo pueden impulsar su aplicación.",
-                "action": "Ponte en contacto"
+                "text": "Asóciese conmigo y juntos crearemos aplicaciones excepcionales y fáciles de usar junto con un backend robusto, escalable y seguro que impulsa el éxito de su aplicación.",
+                "contactMessage": "Contácteme hoy para discutir su proyecto y explorar cómo mis servicios de desarrollo pueden impulsar su aplicación.",
+                "action": "Contáctame",
+                "seeWork": "Ver mi trabajo"
             }
         },
         "contact": {
