@@ -102,6 +102,12 @@
                 "action": "Get in touch"
             }
         },
+        "projects": {
+            "title": "Projects",
+            "web": {
+                "title": "Web Applications"
+            }
+        },
         "contact": {
 
         }

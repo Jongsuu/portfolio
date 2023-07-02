@@ -100,6 +100,9 @@
                 "action": "Contacta'm"
             }
         },
+        "projects": {
+            "title": "Projectes"
+        },
         "contact": {
 
         }
