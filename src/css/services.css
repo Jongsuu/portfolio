@@ -45,11 +45,12 @@
 
 .service-item p {
     text-align: justify;
+    font-size: 18px;
 }
 
 .service-reasons li {
     margin: 0.5rem 0;
-    text-align: justify;
+    font-size: 18px;
 }
 
 .service-contact {
@@ -147,6 +148,6 @@
     }
 
     .service-item {
-        padding: 1rem;
+        padding: 1.5rem;
     }
 }
