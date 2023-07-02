@@ -7,8 +7,11 @@
             "contact": "Contacte"
         },
         "home": {
-            "welcomeMessage": "Hola",
-            "navServices": "Els meus serveis"
+            "profession": "Enginyer de software júnior a DXC Technology",
+            "intro": "M'especialitzo en aprofitar el poder de .NET per crear aplicacions robustes i escalables amb una experiència d'usuari impecable.{br/}Aporto la meva passió i dedicació a cada projecte en què treballo.",
+            "textAction": "Treballem junts per fer realitat les seves idees de programari i assolir els seus objectius.",
+            "navServices": "Els meus serveis",
+            "navProjects": "Veure projectes"
         },
         "about": {
             "title": "Sobre mi",
@@ -94,8 +97,7 @@
                 "intro": "Està llest per desbloquejar el potencial de les aplicacions? Està llest per optimitzar el rendiment de la seva aplicació, millorar la seguretat i desbloquejar tot el potencial dels seus serveis de backend?",
                 "text": "Associeu-vos amb mi i junts crearem aplicacions excepcionals i fàcils d'usar juntament amb un backend robust, escalable i segur que impulsa l'èxit de la seva aplicació.",
                 "contactMessage": "Contacti'm avui per discutir el seu projecte i explorar com els meus serveis de desenvolupament poden impulsar-ne l'aplicació.",
-                "action": "Contacta'm",
-                "seeWork": "Veure la meva feina"
+                "action": "Contacta'm"
             }
         },
         "contact": {

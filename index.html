@@ -10,6 +10,7 @@
         <script type="module" src="/src/scripts/main.ts"></script>
 
         <link rel="stylesheet" href="/src/css/style.css" />
+        <link rel="stylesheet" href="/src/css/home.css" />
         <link rel="stylesheet" href="/src/css/services.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
@@ -82,10 +83,29 @@
         </header>
 
         <main>
-            <section id="home" style="margin-bottom: 2000px;">
-                <h1 i18n="home.welcomeMessage"></h1>
-                <div class="outline-button-container">
-                    <a class="outline-button" i18n="home.navServices" href="#services"></a>
+            <section id="home">
+                <div>
+
+                    <div class="home-container">
+                        <div class="home-info-container">
+                            <h1 class="home-title">Pau Pereira</h1>
+                            <h3 class="home-subtitle" i18n="home.profession"></h3>
+                            <p class="home-intro" i18n="home.intro"></p>
+                            <p class="home-intro" i18n="home.textAction"></p>
+                        </div>
+
+                        <div id="homeAction">
+                            <div class="d-flex">
+                                <div class="outline-button-container" style="margin-right: 1rem;">
+                                    <a class="outline-button" i18n="home.navServices" href="#services"></a>
+                                </div>
+                                <div class="outline-button-container">
+                                    <a class="outline-button" i18n="home.navProjects" href="/projects"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
             <section id="services">
@@ -199,11 +219,8 @@
 
                                 <div id="servicesAction">
                                     <div class="d-flex justify-content-center">
-                                        <div class="outline-button-container" style="margin-right: 1rem;">
-                                            <a class="outline-button" i18n="services.contact.action" href="mailto:paupereirallobet@gmail.com"></a>
-                                        </div>
                                         <div class="outline-button-container">
-                                            <a class="outline-button" i18n="services.contact.seeWork" href="/projects"></a>
+                                            <a class="outline-button" i18n="services.contact.action" href="mailto:paupereirallobet@gmail.com"></a>
                                         </div>
                                     </div>
                                 </div>

@@ -7,8 +7,11 @@
             "contact": "Contact"
         },
         "home": {
-            "welcomeMessage": "Hello",
-            "navServices": "My services"
+            "profession": "Junior software engineer at DXC Technology",
+            "intro": "I specialize in leveraging the power of .NET to build robust and scalable applications with a flawless user experience.{br/}I bring my passion and dedication to every project I work on.",
+            "textAction": "Let's work together to bring your software ideas to life and achieve your goals.",
+            "navServices": "My services",
+            "navProjects": "See my work"
         },
         "about": {
             "title": "About",
@@ -96,8 +99,7 @@
                 "intro": "Are you ready to unlock the potential of your applications? Are you ready to optimize your application's performance, enhance security, and unlock the full potential of your backend services?",
                 "text": "Partner with me, and together we will create exceptional, user-friendly apps coupled with a robust, scalable and secure backend that powers your application's success.",
                 "contactMessage": "Contact me today to discuss your project and explore how my development services can drive your application forward.",
-                "action": "Get in touch",
-                "seeWork": "See my work"
+                "action": "Get in touch"
             }
         },
         "contact": {

@@ -1,0 +1,24 @@
+.home-container {
+    border-radius: .5rem;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+    background-color: rgb(255, 255, 255) !important;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.home-title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.home-subtitle {
+    font-size: 2rem;
+}
+
+.home-intro {
+    font-size: 18px;
+}
+
+#homeAction {
+    margin-top: 3rem;
+}

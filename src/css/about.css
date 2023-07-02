@@ -209,3 +209,18 @@
         margin: 0 0.5rem;
     }
 }
+
+@media (max-width: 700px) {
+    .experience-content {
+        display: block;
+    }
+
+    .experience-item-header {
+        width: 100%;
+    }
+
+    .experience-technologies {
+        width: 100%;
+        align-items: left;
+    }
+}
