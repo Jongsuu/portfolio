@@ -23,6 +23,14 @@
     margin-top: 3rem;
 }
 
+#homeAction div {
+    display: flex;
+}
+
+#homeActionNavServices {
+    margin-right: 1rem;
+}
+
 @media (max-width: 992px) {
     .home-container {
         margin: 2rem 0;
@@ -40,5 +48,16 @@
 
     .home-intro {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 500px) {
+    #homeAction div {
+        display: block;
+    }
+
+    #homeActionNavServices {
+        margin-right: 0;
+        margin-bottom: 1rem;
     }
 }
