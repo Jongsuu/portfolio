@@ -1,0 +1,39 @@
+.contact-title {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.contact-subtitle {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+#contact-through div {
+    display: flex;
+    gap: 2rem;
+}
+
+.outline-button-container:hover .socials-link-img {
+    filter: grayscale(0);
+}
+
+.socials-link-img {
+    filter: grayscale(100%);
+    max-width: 2rem;
+    max-height: 2rem;
+    width: auto;
+    height: auto;
+    min-width: 1rem;
+    min-height: 1rem;
+    transition: all 350ms;
+}
+
+@media (max-width: 450px) {
+    #contact-through div {
+        display: block;
+    }
+
+    #contact-through .outline-button-container {
+        margin-bottom: 1.5rem;
+    }
+}

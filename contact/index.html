@@ -5,12 +5,12 @@
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Projects | Pau Pereira</title>
+        <title>Contact | Pau Pereira</title>
 
         <script type="module" src="/src/scripts/main.ts"></script>
 
         <link rel="stylesheet" href="/src/css/style.css" />
-        <link rel="stylesheet" href="/src/css/projects.css" />
+        <link rel="stylesheet" href="/src/css/contact.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -36,8 +36,8 @@
                 <!--Navigation Links-->
                 <ul class="nav-links-list">
                     <li><a href="/about" i18n="nav.about" class="nav-links-item"></a></li>
-                    <li><a href="#" i18n="nav.projects" class="nav-links-item nav-links-item-active"></a></li>
-                    <li><a href="/contact" i18n="nav.contact" class="nav-links-item"></a></li>
+                    <li><a href="/projects" i18n="nav.projects" class="nav-links-item"></a></li>
+                    <li><a href="#" i18n="nav.contact" class="nav-links-item"></a></li>
                 </ul>
 
                 <div class="nav-right">
@@ -82,44 +82,37 @@
         </header>
 
         <main>
-            <section id="projects">
-                <h1 class="projects-title" i18n="projects.title"></h1>
+            <section id="contact">
 
-                <h3 class="projects-subtitle" i18n="projects.web.title"></h3>
+                <h1 i18n="contact.title" class="contact-title"></h1>
 
-                <div>
-                    <div class="projects-container">
+                <h5 i18n="contact.contactMe" class="contact-subtitle"></h5>
 
-                        <div class="projects-item">
-                            <img src="/src/img/projects/prima.png" class="projects-item-img" />
-
-                            <div class="projects-item-info">
-                                <h4 class="projects-item-title">CaixaBank Prima</h4>
-
-                                <div>
-                                    <span class="projects-item-technologies-item">HTML</span>
-                                    <span class="projects-item-technologies-item">CSS</span>
-                                    <span class="projects-item-technologies-item">TypeScript</span>
-                                    <span class="projects-item-technologies-item">.NET</span>
-                                    <span class="projects-item-technologies-item">jQuery</span>
-                                </div>
-                            </div>
+                <div id="contact-through">
+                    <div>
+                        <div class="outline-button-container">
+                            <a class="outline-button" href="mailto:paupereirallobet@gmail.com">
+                                <span style="margin-right: 10px;">Email</span>
+                                <img src="/src/img/gmail.png" class="socials-link-img" />
+                            </a>
                         </div>
+                        <div class="outline-button-container">
+                            <a href="https://linkedin.com/in/pau-pereira-llobet-a79543263" class="outline-button" target="_blank">
+                                <span style="margin-right: 10px;">LinkedIn</span>
+                                <img src="/src/img/linkedin.webp" class="socials-link-img" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                        <a class="projects-item" href="https://www.tapinauticpello.com/" target="_blank">
-                            <img src="/src/img/projects/tapinautic-project.png" class="projects-item-img" />
+                <h5 i18n="contact.seeWork" class="contact-subtitle"></h5>
 
-                            <div class="projects-item-info">
-                                <h4 class="projects-item-title">Tapinautic PELLO</h4>
-
-                                <div>
-                                    <span class="projects-item-technologies-item">HTML</span>
-                                    <span class="projects-item-technologies-item">CSS</span>
-                                    <span class="projects-item-technologies-item">JavaScript</span>
-                                </div>
-                            </div>
+                <div class="d-flex">
+                    <div class="outline-button-container">
+                        <a href="https://github.com/Jongsuu" class="outline-button" target="_blank">
+                            <span style="margin-right: 10px;">GitHub</span>
+                            <img src="/src/img/about/github.png" class="socials-link-img" />
                         </a>
-
                     </div>
                 </div>
 

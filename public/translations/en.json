@@ -105,11 +105,13 @@
         "projects": {
             "title": "Projects",
             "web": {
-                "title": "Web Applications"
+                "title": "Web applications"
             }
         },
         "contact": {
-
+            "title": "Contact",
+            "contactMe": "You can contact me by:",
+            "seeWork": "You can see my personal projects on:"
         }
     }
 }

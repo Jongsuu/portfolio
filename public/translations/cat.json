@@ -101,10 +101,15 @@
             }
         },
         "projects": {
-            "title": "Projectes"
+            "title": "Projectes",
+            "web": {
+                "title": "Aplicacions web"
+            }
         },
         "contact": {
-
+            "title": "Contacte",
+            "contactMe": "Pots contactar-me per:",
+            "seeWork": "Pots veure els meus projectes personals a:"
         }
     }
 }
