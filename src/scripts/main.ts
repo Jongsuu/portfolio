@@ -4,8 +4,6 @@ import "bootstrap";
 import $ from "jquery";
 import { UtilsComponent } from './utils.component';
 
-console.info("main.ts");
-
 async function loadPage(file: string): Promise<string> {
     const response = await fetch(file);
     return await response.text();
@@ -36,19 +34,26 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     });
 }
 
-async function scrollNavbar(): Promise<void> {
+async function registerNavbarEvents(): Promise<void> {
     $(window).on('scroll', async() => {
         let header = $('header');
         header.toggleClass('header-scrolled', $(window).scrollTop() > 20);
     });
+
+    let menuToggle = document.querySelector<HTMLElement>(".nav-menu-toggle");
+
+    menuToggle.addEventListener("click", async() => {
+        let links = document.querySelector<HTMLElement>(".nav-links-list-mobile");
+        document.querySelector("main").classList.toggle("ocu");
+        links.classList.toggle("nav-links-list-mobile-active");
+    });
 }
 
 $(() => {
-    console.info("utils.ts");
     let utils = new UtilsComponent();
 
     changeTranslationsEvent(utils);
-    scrollNavbar();
+    registerNavbarEvents();
 
     setTimeout(() => { document.body.classList.add("show"); }, 300);
 });
