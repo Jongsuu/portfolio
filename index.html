@@ -5,11 +5,295 @@
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="canonical" href="https://pau-pereira.netlify.app"/>
+
         <title>Home | Pau Pereira</title>
+        <meta name="description" content="Welcome to my portfolio! I'm a junior software engineer on a mission to create innovative solutions and bring ideas to life through code." />
 
-        <script type="module" src="/src/scripts/main.ts"></script>
+        <meta property="og:title" content="Home | Pau Pereira" />
+        <meta name="og:description" content="Welcome to my portfolio! I'm a junior software engineer on a mission to create innovative solutions and bring ideas to life through code." />
 
-        <link rel="stylesheet" href="/src/css/style.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+            :root {
+                --main-btn-color: rgba(170, 116, 212, 0.75);
+                --text-normal-color: #333;
+                --text-section-color: rgb(255, 255, 255);
+                --text-hover-color: #ad71de;
+                --outline-hover-color: rgba(64, 64, 64, 0.75);
+                --transition-duration: 0.25s;
+            }
+
+            .text-normal {
+                color: var(--text-normal-color);
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: rgb(242, 240, 238) !important;
+            }
+
+            * {
+                font-family: Roboto, sans-serif;
+            }
+
+            header {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                background-color: transparent;
+                transition: all 0.35s ease;
+            }
+
+            .header-scrolled {
+                background-color: #fff !important;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, .33);
+            }
+
+            nav {
+                padding: 0.5rem 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .nav-logo {
+                font-size: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 900;
+                transition-duration: var(--transition-duration);
+                color: var(--text-normal-color);
+                overflow: hidden;
+                background: linear-gradient(to right, var(--text-hover-color), var(--text-hover-color) 50%, var(--text-normal-color) 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 350ms ease;
+            }
+
+            .nav-logo:hover {
+                background-position: 0 100%;
+            }
+
+            .nav-links-list {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                gap: 5rem;
+            }
+
+            .nav-links-list li {
+                transform: scale(1);
+                transition-duration: var(--transition-duration);
+            }
+
+            .nav-links-item {
+                display: block;
+                color: var(--text-normal-color);
+                text-align: center;
+                text-decoration: none;
+                font-size: 17px;
+                transition-duration: var(--transition-duration);
+                overflow: hidden;
+                background: linear-gradient(to right, var(--text-hover-color), var(--text-hover-color) 50%, var(--text-normal-color) 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 275ms ease;
+            }
+
+            .nav-links-item:hover:not(.nav-links-item-active) {
+                background-position: 0 100%;
+            }
+
+            .nav-menu-toggle {
+                font-size: 23px;
+                display: none;
+            }
+
+            .nav-menu-toggle:active {
+                color: var(--text-hover-color) !important;
+            }
+
+            .nav-right {
+                display: flex;
+            }
+
+            .nav-links-item-active {
+                color: var(--text-hover-color) !important;
+                background-position: 0 100%;
+                height: 100%;
+            }
+
+            .nav-links-list-mobile {
+                position: absolute;
+                visibility: collapse;
+                list-style: none;
+                background: #fff;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 500ms;
+            }
+
+            .nav-links-item-mobile {
+                display: block;
+                color: var(--text-normal-color);
+                text-decoration: none;
+                font-size: 22px;
+                margin: 2rem 0;
+                overflow: hidden;
+                transition: all var(--transition-duration);
+            }
+
+            .nav-links-item-mobile:hover:not(.nav-links-item-active) {
+                color: var(--text-hover-color)
+            }
+
+            .nav-links-list-mobile-active {
+                visibility: visible !important;
+                opacity: 1;
+            }
+
+            #LanguageDropdownContainer {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .dropdown-item:hover {
+                cursor: pointer;
+            }
+
+            #LanguageDropdown {
+                transition-duration: var(--transition-duration);
+            }
+
+            #LanguageDropdown:hover {
+                color: var(--text-hover-color);
+                transition-duration: var(--transition-duration);
+            }
+
+            .ocu {
+                display: none;
+            }
+
+            .w-fit {
+                width: fit-content;
+            }
+
+            .h-fit {
+                height: fit-content;
+            }
+
+            main {
+                border-radius: .5rem;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+                background-color: rgb(255, 255, 255) !important;
+                margin: 0rem 10rem 1.75rem 10rem;
+                padding: 2rem 5rem;
+            }
+
+            .outline-button-container {
+                transition: 0.3s;
+                background: transparent;
+            }
+
+            .outline-button {
+                font-weight: 500;
+                width: fit-content;
+                margin: 0;
+                border-radius: 50rem;
+                border: 2px solid black;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 22px;
+                background: transparent;
+                color: var(--text-normal-color);
+                transition: 0.3s;
+            }
+
+            .outline-button-container:hover .outline-button {
+                border: 2px solid var(--text-hover-color);
+                color: var(--text-hover-color);
+            }
+
+            .outline-button-container:hover {
+                transform: translateY(-5px);
+            }
+
+            .close {
+                float: right;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1;
+                color: #000;
+                text-shadow: 0 1px 0 #fff;
+                opacity: .5;
+                padding: 0;
+                background-color: transparent;
+                border: 0;
+                transition-duration: var(--transition-duration);
+            }
+
+            .close:hover {
+                opacity: 1;
+                transition-duration: var(--transition-duration);
+            }
+
+            @media (max-width: 1600px) {
+                main {
+                    margin: 0rem 5rem 1.75rem 5rem !important;
+                    padding: 2rem 2rem !important;
+                }
+            }
+
+            @media (max-width: 992px) {
+                nav {
+                    padding: 0.5rem 2rem;
+                }
+
+                .nav-menu-toggle {
+                    display: block;
+                    margin-right: 25px;
+                }
+
+                .nav-links-list,
+                .nav-links-item {
+                    display: none;
+                }
+
+                main {
+                    margin: 0 !important;
+                    border-radius: 0 !important;
+                    box-shadow: none !important;
+                    padding: 1rem 1rem !important;
+                }
+            }
+        </style>
+
         <link rel="stylesheet" href="/src/css/home.css" />
         <link rel="stylesheet" href="/src/css/services.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
@@ -17,11 +301,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <script type="module" src="/src/scripts/main.ts"></script>
 
     </head>
 
@@ -32,13 +312,13 @@
 
             <nav>
                 <!--Logo-->
-                <a href="#" class="nav-logo">Pau Pereira</a>
+                <a href="#" class="nav-logo" dir="ltr">Pau Pereira</a>
 
                 <!--Navigation Links-->
                 <ul class="nav-links-list">
-                    <li><a href="/about" i18n="nav.about" class="nav-links-item"></a></li>
-                    <li><a href="/projects" i18n="nav.projects" class="nav-links-item"></a></li>
-                    <li><a href="/contact" i18n="nav.contact" class="nav-links-item"></a></li>
+                    <li><a href="/about" i18n="nav.about" class="nav-links-item" dir="ltr"></a></li>
+                    <li><a href="/projects" i18n="nav.projects" class="nav-links-item" dir="ltr"></a></li>
+                    <li><a href="/contact" i18n="nav.contact" class="nav-links-item" dir="ltr"></a></li>
                 </ul>
 
                 <div class="nav-right">
@@ -56,7 +336,7 @@
                             <li>
                                 <a class="dropdown-item" lang="en" id="LanguageOptionsSelected">
                                     <i class="fi-gb fi"></i>
-                                    <span>English</span>
+                                    <span dir="ltr">English</span>
                                     <i class="fa-solid fa-check text-success ms-2"></i>
                                 </a>
                             </li>
@@ -64,13 +344,13 @@
                             <li>
                                 <a class="dropdown-item" lang="es">
                                     <i class="fi-es fi"></i>
-                                    <span>Español</span>
+                                    <span dir="ltr">Español</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" lang="cat">
                                     <i class="fi-es-ct fi"></i>
-                                    <span>Català</span>
+                                    <span dir="ltr">Català</span>
                                 </a>
                             </li>
                         </ul>
@@ -83,9 +363,9 @@
         </header>
 
         <ul class="nav-links-list-mobile">
-            <li><a href="/about" i18n="nav.about" class="nav-links-item-mobile"></a></li>
-            <li><a href="/projects" i18n="nav.projects" class="nav-links-item-mobile"></a></li>
-            <li><a href="/contact" i18n="nav.contact" class="nav-links-item-mobile"></a></li>
+            <li><a href="/about" i18n="nav.about" class="nav-links-item-mobile" dir="ltr"></a></li>
+            <li><a href="/projects" i18n="nav.projects" class="nav-links-item-mobile" dir="ltr"></a></li>
+            <li><a href="/contact" i18n="nav.contact" class="nav-links-item-mobile" dir="ltr"></a></li>
         </ul>
 
         <main>
@@ -95,19 +375,19 @@
 
                     <div class="home-container">
                         <div class="home-info-container">
-                            <h1 class="home-title">Pau Pereira</h1>
-                            <h3 class="home-subtitle" i18n="home.profession"></h3>
-                            <p class="home-intro" i18n="home.intro"></p>
-                            <p class="home-intro" i18n="home.textAction"></p>
+                            <h1 class="home-title" dir="ltr">Pau Pereira</h1>
+                            <h3 class="home-subtitle" i18n="home.profession" dir="ltr"></h3>
+                            <p class="home-intro" i18n="home.intro" dir="ltr"></p>
+                            <p class="home-intro" i18n="home.textAction" dir="ltr"></p>
                         </div>
 
                         <div id="homeAction">
                             <div>
                                 <div class="outline-button-container" id="homeActionNavServices">
-                                    <a class="outline-button" i18n="home.navServices" href="#services"></a>
+                                    <a class="outline-button" i18n="home.navServices" href="#services" dir="ltr"></a>
                                 </div>
                                 <div class="outline-button-container">
-                                    <a class="outline-button" i18n="home.navProjects" href="/projects"></a>
+                                    <a class="outline-button" i18n="home.navProjects" href="/projects" dir="ltr"></a>
                                 </div>
                             </div>
                         </div>
@@ -117,23 +397,23 @@
             </section>
             <section id="services">
 
-                <h1 i18n="services.title" class="service-title"></h1>
+                <h1 i18n="services.title" class="service-title" dir="ltr"></h1>
 
-                <h3 i18n="services.frontend.title" class="service-subtitle"></h3>
+                <h3 i18n="services.frontend.title" class="service-subtitle" dir="ltr"></h3>
 
                 <div>
                     <div class="service-container">
 
                         <div class="service-item">
-                            <h5 class="service-item-title" i18n="services.frontend.web.title"></h5>
-                            <p i18n="services.frontend.web.intro"></p>
-                            <p i18n="services.frontend.web.text"></p>
+                            <h5 class="service-item-title" i18n="services.frontend.web.title" dir="ltr"></h5>
+                            <p i18n="services.frontend.web.intro" dir="ltr"></p>
+                            <p i18n="services.frontend.web.text" dir="ltr"></p>
                         </div>
 
                         <div class="service-item">
-                            <h5 class="service-item-title" i18n="services.frontend.desktop.title"></h5>
-                            <p i18n="services.frontend.desktop.intro"></p>
-                            <p i18n="services.frontend.desktop.text"></p>
+                            <h5 class="service-item-title" i18n="services.frontend.desktop.title" dir="ltr"></h5>
+                            <p i18n="services.frontend.desktop.intro" dir="ltr"></p>
+                            <p i18n="services.frontend.desktop.text" dir="ltr"></p>
                         </div>
 
                     </div>
@@ -141,22 +421,22 @@
                     <div class="service-container">
 
                         <div class="service-item">
-                            <h5 class="service-item-title" i18n="services.frontend.mobile.title"></h5>
-                            <p i18n="services.frontend.mobile.intro"></p>
-                            <p i18n="services.frontend.mobile.text"></p>
+                            <h5 class="service-item-title" i18n="services.frontend.mobile.title" dir="ltr"></h5>
+                            <p i18n="services.frontend.mobile.intro" dir="ltr"></p>
+                            <p i18n="services.frontend.mobile.text" dir="ltr"></p>
                         </div>
 
                         <div class="service-item">
                             <div>
-                                <h5 class="service-item-title" i18n="services.frontend.offer.title"></h5>
-                                <p i18n="services.frontend.offer.intro"></p>
+                                <h5 class="service-item-title" i18n="services.frontend.offer.title" dir="ltr"></h5>
+                                <p i18n="services.frontend.offer.intro" dir="ltr"></p>
 
                                 <ol class="service-reasons">
-                                    <li i18n="services.frontend.offer.reason1"></li>
-                                    <li i18n="services.frontend.offer.reason2"></li>
-                                    <li i18n="services.frontend.offer.reason3"></li>
-                                    <li i18n="services.frontend.offer.reason4"></li>
-                                    <li i18n="services.frontend.offer.reason5"></li>
+                                    <li i18n="services.frontend.offer.reason1" dir="ltr"></li>
+                                    <li i18n="services.frontend.offer.reason2" dir="ltr"></li>
+                                    <li i18n="services.frontend.offer.reason3" dir="ltr"></li>
+                                    <li i18n="services.frontend.offer.reason4" dir="ltr"></li>
+                                    <li i18n="services.frontend.offer.reason5" dir="ltr"></li>
                                 </ol>
 
                             </div>
@@ -166,21 +446,21 @@
                     </div>
                 </div>
 
-                <h3 i18n="services.backend.title" class="service-subtitle"></h3>
+                <h3 i18n="services.backend.title" class="service-subtitle" dir="ltr"></h3>
 
                 <div>
                     <div class="service-container">
 
                         <div class="service-item">
-                            <h5 class="service-item-title" i18n="services.backend.article1.title"></h5>
-                            <p i18n="services.backend.article1.intro"></p>
-                            <p i18n="services.backend.article1.text"></p>
+                            <h5 class="service-item-title" i18n="services.backend.article1.title" dir="ltr"></h5>
+                            <p i18n="services.backend.article1.intro" dir="ltr"></p>
+                            <p i18n="services.backend.article1.text" dir="ltr"></p>
                         </div>
 
                         <div class="service-item">
-                            <h5 class="service-item-title" i18n="services.backend.article2.title"></h5>
-                            <p i18n="services.backend.article2.intro"></p>
-                            <p i18n="services.backend.article2.text"></p>
+                            <h5 class="service-item-title" i18n="services.backend.article2.title" dir="ltr"></h5>
+                            <p i18n="services.backend.article2.intro" dir="ltr"></p>
+                            <p i18n="services.backend.article2.text" dir="ltr"></p>
                         </div>
 
                     </div>
@@ -188,22 +468,22 @@
                     <div class="service-container">
 
                         <div class="service-item">
-                            <h5 class="service-item-title" i18n="services.backend.article3.title"></h5>
-                            <p i18n="services.backend.article3.intro"></p>
-                            <p i18n="services.backend.article3.text"></p>
+                            <h5 class="service-item-title" i18n="services.backend.article3.title" dir="ltr"></h5>
+                            <p i18n="services.backend.article3.intro" dir="ltr"></p>
+                            <p i18n="services.backend.article3.text" dir="ltr"></p>
                         </div>
 
                         <div class="service-item">
                             <div>
-                                <h5 class="service-item-title" i18n="services.backend.offer.title"></h5>
-                                <p i18n="services.backend.offer.intro"></p>
+                                <h5 class="service-item-title" i18n="services.backend.offer.title" dir="ltr"></h5>
+                                <p i18n="services.backend.offer.intro" dir="ltr"></p>
 
                                 <ol class="service-reasons">
-                                    <li i18n="services.backend.offer.reason1"></li>
-                                    <li i18n="services.backend.offer.reason2"></li>
-                                    <li i18n="services.backend.offer.reason3"></li>
-                                    <li i18n="services.backend.offer.reason4"></li>
-                                    <li i18n="services.backend.offer.reason5"></li>
+                                    <li i18n="services.backend.offer.reason1" dir="ltr"></li>
+                                    <li i18n="services.backend.offer.reason2" dir="ltr"></li>
+                                    <li i18n="services.backend.offer.reason3" dir="ltr"></li>
+                                    <li i18n="services.backend.offer.reason4" dir="ltr"></li>
+                                    <li i18n="services.backend.offer.reason5" dir="ltr"></li>
                                 </ol>
 
                             </div>
@@ -214,20 +494,20 @@
                 </div>
 
                 <div class="service-contact">
-                    <h5 class="service-contact-title" i18n="services.contact.title"></h5>
+                    <h5 class="service-contact-title" i18n="services.contact.title" dir="ltr"></h5>
 
                     <div>
                         <div class="service-contact-text-container">
 
                             <div class="service-contact-text">
-                                <p i18n="services.contact.intro"></p>
-                                <p i18n="services.contact.text"></p>
-                                <p i18n="services.contact.contactMessage"></p>
+                                <p i18n="services.contact.intro" dir="ltr"></p>
+                                <p i18n="services.contact.text" dir="ltr"></p>
+                                <p i18n="services.contact.contactMessage" dir="ltr"></p>
 
                                 <div id="servicesAction">
                                     <div class="d-flex justify-content-center">
                                         <div class="outline-button-container">
-                                            <a class="outline-button" i18n="services.contact.action" href="/contact"></a>
+                                            <a class="outline-button" i18n="services.contact.action" href="/contact" dir="ltr"></a>
                                         </div>
                                     </div>
                                 </div>

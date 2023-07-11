@@ -5,12 +5,295 @@
 
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
+        <link rel="canonical" href="https://pau-pereira.netlify.app/about"/>
+
         <title>About | Pau Pereira</title>
+        <meta name="description" content="Get to know the driven junior software engineer behind the screen, fuelled by curiosity and dedicated to pushing boundaries in the world of technology." />
 
-        <script type="module" src="/src/scripts/main.ts"></script>
-        <script type="module" src="/src/scripts/about.ts"></script>
+        <meta property="og:title" content="About | Pau Pereira" />
+        <meta name="og:description" content="Get to know the driven junior software engineer behind the screen, fuelled by curiosity and dedicated to pushing boundaries in the world of technology." />
 
-        <link rel="stylesheet" href="/src/css/style.css" />
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+            :root {
+                --main-btn-color: rgba(170, 116, 212, 0.75);
+                --text-normal-color: #333;
+                --text-section-color: rgb(255, 255, 255);
+                --text-hover-color: #ad71de;
+                --outline-hover-color: rgba(64, 64, 64, 0.75);
+                --transition-duration: 0.25s;
+            }
+
+            .text-normal {
+                color: var(--text-normal-color);
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            body {
+                background-color: rgb(242, 240, 238) !important;
+            }
+
+            * {
+                font-family: Roboto, sans-serif;
+            }
+
+            header {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1000;
+                background-color: transparent;
+                transition: all 0.35s ease;
+            }
+
+            .header-scrolled {
+                background-color: #fff !important;
+                box-shadow: 0 3px 10px rgba(0, 0, 0, .33);
+            }
+
+            nav {
+                padding: 0.5rem 4rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .nav-logo {
+                font-size: 20px;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-weight: 900;
+                transition-duration: var(--transition-duration);
+                color: var(--text-normal-color);
+                overflow: hidden;
+                background: linear-gradient(to right, var(--text-hover-color), var(--text-hover-color) 50%, var(--text-normal-color) 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 350ms ease;
+            }
+
+            .nav-logo:hover {
+                background-position: 0 100%;
+            }
+
+            .nav-links-list {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                display: flex;
+                gap: 5rem;
+            }
+
+            .nav-links-list li {
+                transform: scale(1);
+                transition-duration: var(--transition-duration);
+            }
+
+            .nav-links-item {
+                display: block;
+                color: var(--text-normal-color);
+                text-align: center;
+                text-decoration: none;
+                font-size: 17px;
+                transition-duration: var(--transition-duration);
+                overflow: hidden;
+                background: linear-gradient(to right, var(--text-hover-color), var(--text-hover-color) 50%, var(--text-normal-color) 50%);
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-size: 200% 100%;
+                background-position: 100%;
+                transition: background-position 275ms ease;
+            }
+
+            .nav-links-item:hover:not(.nav-links-item-active) {
+                background-position: 0 100%;
+            }
+
+            .nav-menu-toggle {
+                font-size: 23px;
+                display: none;
+            }
+
+            .nav-menu-toggle:active {
+                color: var(--text-hover-color) !important;
+            }
+
+            .nav-right {
+                display: flex;
+            }
+
+            .nav-links-item-active {
+                color: var(--text-hover-color) !important;
+                background-position: 0 100%;
+                height: 100%;
+            }
+
+            .nav-links-list-mobile {
+                position: absolute;
+                visibility: collapse;
+                list-style: none;
+                background: #fff;
+                opacity: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 500ms;
+            }
+
+            .nav-links-item-mobile {
+                display: block;
+                color: var(--text-normal-color);
+                text-decoration: none;
+                font-size: 22px;
+                margin: 2rem 0;
+                overflow: hidden;
+                transition: all var(--transition-duration);
+            }
+
+            .nav-links-item-mobile:hover:not(.nav-links-item-active) {
+                color: var(--text-hover-color)
+            }
+
+            .nav-links-list-mobile-active {
+                visibility: visible !important;
+                opacity: 1;
+            }
+
+            #LanguageDropdownContainer {
+                padding: 0;
+                margin: 0;
+                display: flex;
+                align-items: center;
+            }
+
+            .dropdown-item:hover {
+                cursor: pointer;
+            }
+
+            #LanguageDropdown {
+                transition-duration: var(--transition-duration);
+            }
+
+            #LanguageDropdown:hover {
+                color: var(--text-hover-color);
+                transition-duration: var(--transition-duration);
+            }
+
+            .ocu {
+                display: none;
+            }
+
+            .w-fit {
+                width: fit-content;
+            }
+
+            .h-fit {
+                height: fit-content;
+            }
+
+            main {
+                border-radius: .5rem;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
+                background-color: rgb(255, 255, 255) !important;
+                margin: 0rem 10rem 1.75rem 10rem;
+                padding: 2rem 5rem;
+            }
+
+            .outline-button-container {
+                transition: 0.3s;
+                background: transparent;
+            }
+
+            .outline-button {
+                font-weight: 500;
+                width: fit-content;
+                margin: 0;
+                border-radius: 50rem;
+                border: 2px solid black;
+                padding: 0.5rem 1rem;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 22px;
+                background: transparent;
+                color: var(--text-normal-color);
+                transition: 0.3s;
+            }
+
+            .outline-button-container:hover .outline-button {
+                border: 2px solid var(--text-hover-color);
+                color: var(--text-hover-color);
+            }
+
+            .outline-button-container:hover {
+                transform: translateY(-5px);
+            }
+
+            .close {
+                float: right;
+                font-size: 2rem;
+                font-weight: 700;
+                line-height: 1;
+                color: #000;
+                text-shadow: 0 1px 0 #fff;
+                opacity: .5;
+                padding: 0;
+                background-color: transparent;
+                border: 0;
+                transition-duration: var(--transition-duration);
+            }
+
+            .close:hover {
+                opacity: 1;
+                transition-duration: var(--transition-duration);
+            }
+
+            @media (max-width: 1600px) {
+                main {
+                    margin: 0rem 5rem 1.75rem 5rem !important;
+                    padding: 2rem 2rem !important;
+                }
+            }
+
+            @media (max-width: 992px) {
+                nav {
+                    padding: 0.5rem 2rem;
+                }
+
+                .nav-menu-toggle {
+                    display: block;
+                    margin-right: 25px;
+                }
+
+                .nav-links-list,
+                .nav-links-item {
+                    display: none;
+                }
+
+                main {
+                    margin: 0 !important;
+                    border-radius: 0 !important;
+                    box-shadow: none !important;
+                    padding: 1rem 1rem !important;
+                }
+            }
+        </style>
+
         <link rel="stylesheet" href="/src/css/about.css" />
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
@@ -18,37 +301,30 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
+        <script type="module" src="/src/scripts/main.ts"></script>
+        <script type="module" src="/src/scripts/about.ts"></script>
 
     </head>
 
     <body class="fade">
 
-        <!--Navbar-->
         <header>
 
             <nav>
-                <!--Logo-->
-                <a href="/" class="nav-logo">Pau Pereira</a>
+                <a href="/" class="nav-logo" dir="ltr">Pau Pereira</a>
 
-                <!--Navigation Links-->
                 <ul class="nav-links-list">
-                    <li><a href="#" i18n="nav.about" class="nav-links-item nav-links-item-active"></a></li>
-                    <li><a href="/projects" i18n="nav.projects" class="nav-links-item"></a></li>
-                    <li><a href="/contact" i18n="nav.contact" class="nav-links-item"></a></li>
+                    <li><a href="#" i18n="nav.about" class="nav-links-item nav-links-item-active" dir="ltr"></a></li>
+                    <li><a href="/projects" i18n="nav.projects" class="nav-links-item" dir="ltr"></a></li>
+                    <li><a href="/contact" i18n="nav.contact" class="nav-links-item" dir="ltr"></a></li>
                 </ul>
 
                 <div class="nav-right">
-                    <!--Nav Menu-->
+
                     <a class="nav-menu-toggle">
                         <i class="fa-solid fa-bars text-normal"></i>
                     </a>
 
-                    <!--Languages Dropdown-->
                     <div class="dropdown" id="LanguageDropdownContainer">
 
                         <a class="dropdown-toggle text-normal" id="LanguageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fi-gb fi m-0"></i></a>
@@ -57,7 +333,7 @@
                             <li>
                                 <a class="dropdown-item" lang="en" id="LanguageOptionsSelected">
                                     <i class="fi-gb fi"></i>
-                                    <span>English</span>
+                                    <span dir="ltr">English</span>
                                     <i class="fa-solid fa-check text-success ms-2"></i>
                                 </a>
                             </li>
@@ -65,13 +341,13 @@
                             <li>
                                 <a class="dropdown-item" lang="es">
                                     <i class="fi-es fi"></i>
-                                    <span>Español</span>
+                                    <span dir="ltr">Español</span>
                                 </a>
                             </li>
                             <li>
                                 <a class="dropdown-item" lang="cat">
                                     <i class="fi-es-ct fi"></i>
-                                    <span>Català</span>
+                                    <span dir="ltr">Català</span>
                                 </a>
                             </li>
                         </ul>
@@ -84,66 +360,65 @@
         </header>
 
         <ul class="nav-links-list-mobile">
-            <li><a href="#" i18n="nav.about" class="nav-links-item-mobile nav-links-item-active"></a></li>
-            <li><a href="/projects" i18n="nav.projects" class="nav-links-item-mobile"></a></li>
-            <li><a href="/contact" i18n="nav.contact" class="nav-links-item-mobile"></a></li>
+            <li><a href="#" i18n="nav.about" class="nav-links-item-mobile nav-links-item-active" dir="ltr"></a></li>
+            <li><a href="/projects" i18n="nav.projects" class="nav-links-item-mobile" dir="ltr"></a></li>
+            <li><a href="/contact" i18n="nav.contact" class="nav-links-item-mobile" dir="ltr"></a></li>
         </ul>
 
         <main>
             <section id="about">
 
-                <!--My Skills-->
                 <div id="skills">
 
-                    <h2 i18n="about.mySkills.title"></h2>
+                    <h2 i18n="about.mySkills.title" dir="ltr"></h2>
 
                     <div id="skills-content">
 
                         <div id="frontend" class="skills-card-container">
 
                             <div class="skills-cards-title">
-                                <span i18n="about.mySkills.frontend"></span>
+                                <span i18n="about.mySkills.frontend" dir="ltr"></span>
                             </div>
 
                             <div class="skills-cards">
 
-                                <a class="skills-card-item" title="HTML" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                                <a class="skills-card-item" title="HTML" href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" dir="ltr">
                                     <img alt="HTML" src="/src/img/about/html5.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="CSS" href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">
+                                <a class="skills-card-item" title="CSS" href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank" dir="ltr">
                                     <img alt="CSS" src="/src/img/about/css3.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+                                <a class="skills-card-item" title="JavaScript" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" dir="ltr">
                                     <img alt="JavaScript" src="/src/img/about/javascript.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="TypeScript" href="https://www.typescriptlang.org/" target="_blank">
+                                <a class="skills-card-item" title="TypeScript" href="https://www.typescriptlang.org/" target="_blank" dir="ltr">
                                     <img alt="TypeScript" src="/src/img/about/typescript.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="React" href="https://react.dev/" target="_blank">
+                                <a class="skills-card-item" title="React" href="https://react.dev/" target="_blank" dir="ltr">
                                     <img alt="React" src="/src/img/about/react.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Bootstrap" href="https://getbootstrap.com/" target="_blank">
+                                <a class="skills-card-item" title="Bootstrap" href="https://getbootstrap.com/" target="_blank" dir="ltr">
                                     <img alt="Bootstrap" src="/src/img/about/bootstrap.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="TailwindCSS" href="https://tailwindcss.com/" target="_blank">
+                                <a class="skills-card-item" title="TailwindCSS" href="https://tailwindcss.com/" target="_blank" dir="ltr">
                                     <img alt="TailwindCSS" src="/src/img/about/tailwindcss.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Vite" href="https://vitejs.dev/" target="_blank">
+                                <a class="skills-card-item" title="Vite" href="https://vitejs.dev/" target="_blank" dir="ltr">
                                     <img alt="Vite" src="/src/img/about/vite.svg" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="WPF" href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-7.0" target="_blank">
+                                <a class="skills-card-item" title="WPF" href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/?view=netdesktop-7.0" target="_blank" dir="ltr">
                                     <img alt="WPF" src="/src/img/about/wpf.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Android Jetpack Compose" href="https://developer.android.com/jetpack/compose?gclid=EAIaIQobChMI0rTprvLZ_wIVSYpoCR3bGwgFEAAYASAAEgJhxvD_BwE&gclsrc=aw.ds" target="_blank">
+                                <a class="skills-card-item" title="Android Jetpack Compose" href="https://developer.android.com/jetpack/compose?gclid=EAIaIQobChMI0rTprvLZ_wIVSYpoCR3bGwgFEAAYASAAEgJhxvD_BwE&gclsrc=aw.ds" target="_blank" dir="ltr">
                                     <img alt="Jetpack Compose" src="/src/img/about/jetpackCompose.png" class="skills-card-item-img" />
                                 </a>
 
@@ -154,36 +429,36 @@
                         <div id="backend" class="skills-card-container">
 
                             <div class="skills-cards-title">
-                                <span i18n="about.mySkills.backend"></span>
+                                <span i18n="about.mySkills.backend" dir="ltr"></span>
                             </div>
 
                             <div class="skills-cards">
 
-                                <a class="skills-card-item" title="C#" href="https://dotnet.microsoft.com/en-us/" target="_blank">
+                                <a class="skills-card-item" title="C#" href="https://dotnet.microsoft.com/en-us/" target="_blank" dir="ltr">
                                     <img alt="C#" src="/src/img/about/csharp.svg" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="ASP.NET" href="https://dotnet.microsoft.com/es-es/apps/aspnet" target="_blank">
+                                <a class="skills-card-item" title="ASP.NET" href="https://dotnet.microsoft.com/es-es/apps/aspnet" target="_blank" dir="ltr">
                                     <img alt="ASP.NET" src="/src/img/about/aspNet.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Java" href="https://dev.java/" target="_blank">
+                                <a class="skills-card-item" title="Java" href="https://dev.java/" target="_blank" dir="ltr">
                                     <img alt="Java" src="/src/img/about/java.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Python" href="https://www.python.org/" target="_blank">
+                                <a class="skills-card-item" title="Python" href="https://www.python.org/" target="_blank" dir="ltr">
                                     <img alt="Python" src="/src/img/about/python.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="MySQL" href="https://www.mysql.com/" target="_blank">
+                                <a class="skills-card-item" title="MySQL" href="https://www.mysql.com/" target="_blank" dir="ltr">
                                     <img alt="MySQL" src="/src/img/about/mySql.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="SQL Server" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank">
+                                <a class="skills-card-item" title="SQL Server" href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads" target="_blank" dir="ltr">
                                     <img alt="SQL Server" src="/src/img/about/sqlServer.svg" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="PostgreSQL" href="https://www.postgresql.org/" target="_blank">
+                                <a class="skills-card-item" title="PostgreSQL" href="https://www.postgresql.org/" target="_blank" dir="ltr">
                                     <img alt="PostgreSQL" src="/src/img/about/postgreSql.png" class="skills-card-item-img" />
                                 </a>
 
@@ -194,36 +469,36 @@
                         <div id="otherTools" class="skills-card-container">
 
                             <div class="skills-cards-title">
-                                <span i18n="about.mySkills.other"></span>
+                                <span i18n="about.mySkills.other" dir="ltr"></span>
                             </div>
 
                             <div class="skills-cards">
 
-                                <a class="skills-card-item" title="Git" href="https://git-scm.com/" target="_blank">
+                                <a class="skills-card-item" title="Git" href="https://git-scm.com/" target="_blank" dir="ltr">
                                     <img alt="Git" src="/src/img/about/git.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="GitHub" href="https://github.com/" target="_blank">
+                                <a class="skills-card-item" title="GitHub" href="https://github.com/" target="_blank" dir="ltr">
                                     <img alt="GitHub" src="/src/img/about/github.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Neovim" href="https://neovim.io/" target="_blank">
+                                <a class="skills-card-item" title="Neovim" href="https://neovim.io/" target="_blank" dir="ltr">
                                     <img alt="Neovim" src="/src/img/about/neovim.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Node Package Manager" href="https://www.npmjs.com/" target="_blank">
+                                <a class="skills-card-item" title="Node Package Manager" href="https://www.npmjs.com/" target="_blank" dir="ltr">
                                     <img alt="NPM" src="/src/img/about/npm.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="XAMPP" href="https://www.apachefriends.org/index.html" target="_blank">
+                                <a class="skills-card-item" title="XAMPP" href="https://www.apachefriends.org/index.html" target="_blank" dir="ltr">
                                     <img alt="XAMPP" src="/src/img/about/xampp.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Postman" href="https://www.postman.com/" target="_blank">
+                                <a class="skills-card-item" title="Postman" href="https://www.postman.com/" target="_blank" dir="ltr">
                                     <img alt="Postman" src="/src/img/about/postman.png" class="skills-card-item-img" />
                                 </a>
 
-                                <a class="skills-card-item" title="Netlify" href="https://www.netlify.com/" target="_blank">
+                                <a class="skills-card-item" title="Netlify" href="https://www.netlify.com/" target="_blank" dir="ltr">
                                     <img alt="Netlify" src="/src/img/about/netlify.png" class="skills-card-item-img" />
                                 </a>
 
@@ -236,53 +511,53 @@
 
                 <div id="experience">
 
-                    <h2 i18n="about.experience.title"></h2>
+                    <h2 i18n="about.experience.title" dir="ltr"></h2>
 
                     <div class="experience-container">
 
                         <div class="experience-item">
 
                             <div class="experience-date-container">
-                                <span class="experience-date" i18n="about.experience.experience1.date"></span>
+                                <span class="experience-date" i18n="about.experience.experience1.date" dir="ltr"></span>
                             </div>
 
                             <div class="experience-content">
                                 <div class="experience-item-header">
 
-                                    <p class="experience-company">DXC Technology</p>
-                                    <p class="experience-job-position" i18n="about.experience.experience1.jobPosition"></p>
-                                    <p class="experience-job-situation mb-0" i18n="about.experience.experience1.jobSituation"></p>
+                                    <p class="experience-company" dir="ltr">DXC Technology</p>
+                                    <p class="experience-job-position" i18n="about.experience.experience1.jobPosition" dir="ltr"></p>
+                                    <p class="experience-job-situation mb-0" i18n="about.experience.experience1.jobSituation" dir="ltr"></p>
 
                                 </div>
 
                                 <div class="experience-technologies">
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text">HTML</span>
+                                        <span class="experience-technologies-item-text" dir="ltr">HTML</span>
                                     </div>
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text">CSS</span>
+                                        <span class="experience-technologies-item-text" dir="ltr">CSS</span>
                                     </div>
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text">Bootstrap</span>
+                                        <span class="experience-technologies-item-text" dir="ltr">Bootstrap</span>
                                     </div>
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text">TypeScript</span>
+                                        <span class="experience-technologies-item-text" dir="ltr">TypeScript</span>
                                     </div>
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text">jQuery</span>
+                                        <span class="experience-technologies-item-text" dir="ltr">jQuery</span>
                                     </div>
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text">C#</span>
+                                        <span class="experience-technologies-item-text" dir="ltr">C#</span>
                                     </div>
 
                                     <div class="experience-technologies-item">
-                                        <span class="experience-technologies-item-text" title="Single Page Application">SPA</span>
+                                        <span class="experience-technologies-item-text" title="Single Page Application" dir="ltr">SPA</span>
                                     </div>
 
                                 </div>
@@ -297,7 +572,7 @@
                 <div id="resume">
                     <div class="d-flex justify-content-left">
                         <div class="outline-button-container">
-                            <button class="outline-button" i18n="about.downloadResume" data-bs-toggle="modal" data-bs-target="#downloadResume"></a>
+                            <button class="outline-button" i18n="about.downloadResume" data-bs-toggle="modal" data-bs-target="#downloadResume" dir="ltr"></a>
                         </div>
                     </div>
                 </div>
@@ -305,26 +580,6 @@
             </section>
         </main>
 
-        <!--
-        <footer>
-
-            <ul class="socials">
-                <li>
-                    <a href="https://github.com/Jongsuu" class="socials-link" target="_blank">
-                        <img src="/src/img/about/github.png" class="socials-link-img" />
-                    </a>
-                </li>
-                <li>
-                    <a href="https://linkedin.com/in/pau-pereira-llobet-a79543263" class="socials-link" target="_blank">
-                        <img src="/src/img/linkedin.webp" class="socials-link-img" />
-                    </a>
-                </li>
-            </ul>
-
-        </footer>
-        -->
-
-        <!-- Download resumé modal-->
         <div class="modal fade" id="downloadResume" tabindex="-1" role="dialog" aria-hidden="true" aria-labelledby="downloadResumeLabel">
             <div class="modal-dialog modal-dialog-centered" role="document">
                 <div class="modal-content">
@@ -337,9 +592,9 @@
                     </div>
 
                     <div class="modal-footer justify-content-center">
-                        <a i18n="about.resume.english" class="btn-button" href="/resume/curriculum_english.pdf" download></a>
-                        <a i18n="about.resume.spanish" class="btn-button" href="/resume/curriculum_spanish.pdf" download></a>
-                        <a i18n="about.resume.catalan" class="btn-button" href="/resume/curriculum_catalan.pdf" download></a>
+                        <a i18n="about.resume.english" class="btn-button" href="/resume/curriculum_english.pdf" dir="ltr" download></a>
+                        <a i18n="about.resume.spanish" class="btn-button" href="/resume/curriculum_spanish.pdf" dir="ltr" download></a>
+                        <a i18n="about.resume.catalan" class="btn-button" href="/resume/curriculum_catalan.pdf" dir="ltr" download></a>
                     </div>
 
                 </div>

@@ -9,11 +9,6 @@ async function loadPage(file: string): Promise<string> {
     return await response.text();
 }
 
-async function loadPageComponents(): Promise<void> {
-    let navbar = await loadPage("/src/navbar.html");
-    document.body.innerHTML = navbar + document.body.innerHTML;
-}
-
 async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     let languageDropdownBtn = document.querySelector<HTMLElement>("#LanguageDropdown");
     languageDropdownBtn.click();
@@ -26,6 +21,7 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
         if (!item.id) {
             item.addEventListener("click", async () => {
                 document.body.classList.remove("show");
+                document.documentElement.lang = item.lang;
                 utils.changeTranslations(item.lang).then(() => {
                     setTimeout(() => { document.body.classList.add("show"); }, 300);
                 });
