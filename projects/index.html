@@ -8,8 +8,6 @@
 
         <title>Pau Pereira - Projects</title>
 
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-
         <style>
             :root {
                 --main-btn-color: rgba(170, 116, 212, 0.75);
@@ -20,20 +18,8 @@
                 --transition-duration: 0.25s;
             }
 
-            .text-normal {
-                color: var(--text-normal-color);
-            }
-
-            html {
-                scroll-behavior: smooth;
-            }
-
             body {
                 background-color: rgb(242, 240, 238) !important;
-            }
-
-            * {
-                font-family: Roboto, sans-serif;
             }
 
             header {
@@ -184,72 +170,12 @@
                 transition-duration: var(--transition-duration);
             }
 
-            .ocu {
-                display: none;
-            }
-
-            .w-fit {
-                width: fit-content;
-            }
-
-            .h-fit {
-                height: fit-content;
-            }
-
             main {
                 border-radius: .5rem;
                 box-shadow: 0 25px 50px -12px rgba(0, 0, 0, .25);
                 background-color: rgb(255, 255, 255) !important;
                 margin: 0rem 10rem 1.75rem 10rem;
                 padding: 2rem 5rem;
-            }
-
-            .outline-button-container {
-                transition: 0.3s;
-                background: transparent;
-            }
-
-            .outline-button {
-                font-weight: 500;
-                width: fit-content;
-                margin: 0;
-                border-radius: 50rem;
-                border: 2px solid black;
-                padding: 0.5rem 1rem;
-                text-decoration: none;
-                cursor: pointer;
-                font-size: 22px;
-                background: transparent;
-                color: var(--text-normal-color);
-                transition: 0.3s;
-            }
-
-            .outline-button-container:hover .outline-button {
-                border: 2px solid var(--text-hover-color);
-                color: var(--text-hover-color);
-            }
-
-            .outline-button-container:hover {
-                transform: translateY(-5px);
-            }
-
-            .close {
-                float: right;
-                font-size: 2rem;
-                font-weight: 700;
-                line-height: 1;
-                color: #000;
-                text-shadow: 0 1px 0 #fff;
-                opacity: .5;
-                padding: 0;
-                background-color: transparent;
-                border: 0;
-                transition-duration: var(--transition-duration);
-            }
-
-            .close:hover {
-                opacity: 1;
-                transition-duration: var(--transition-duration);
             }
 
             @media (max-width: 1600px) {
@@ -283,6 +209,7 @@
             }
         </style>
 
+        <link rel="stylesheet" href="/src/css/style.css" />
         <link rel="stylesheet" href="/src/css/projects.css" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
         <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.css" />
