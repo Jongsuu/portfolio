@@ -1,9 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min";
-import "@fortawesome/fontawesome-free/css/solid.min.css";
 import "@fortawesome/fontawesome-free/css/solid.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
 import "flag-icons/css/flag-icons.min.css";
+import "bootstrap";
 import $ from "jquery";
 import { UtilsComponent } from './utils.component';
 
@@ -13,12 +12,12 @@ async function loadPage(file: string): Promise<string> {
 }
 
 async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
-    // let languageDropdownBtn = document.querySelector<HTMLElement>("#LanguageDropdown");
-    // languageDropdownBtn.click();
+    let languageDropdownBtn = document.querySelector<HTMLElement>("#LanguageDropdown");
+    languageDropdownBtn.click();
 
-    // setTimeout(() => {
-    //     languageDropdownBtn.click()
-    // }, 100);
+    setTimeout(() => {
+        languageDropdownBtn.click()
+    }, 50);
 
     document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
         if (!item.id) {
