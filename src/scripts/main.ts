@@ -1,6 +1,9 @@
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min";
+import "@fortawesome/fontawesome-free/css/solid.min.css";
+import "@fortawesome/fontawesome-free/css/solid.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
 import "flag-icons/css/flag-icons.min.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import $ from "jquery";
 import { UtilsComponent } from './utils.component';
 
@@ -27,7 +30,7 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
                 document.documentElement.lang = item.lang;
 
                 utils.changeTranslations(item.lang).then(() => {
-                    setTimeout(() => { loader.classList.add("fadeOut"); }, 50);
+                    setTimeout(() => { loader.classList.add("fadeOut"); }, 200);
                 });
             })
         }
@@ -47,6 +50,14 @@ async function registerNavbarEvents(): Promise<void> {
         document.querySelector("main").classList.toggle("ocu");
         links.classList.toggle("nav-links-list-mobile-active");
     });
+
+    document.body.querySelectorAll("[href]").forEach((item: HTMLLinkElement) => {
+        if (!item.href.includes("#")) {
+            item.addEventListener("click", () => {
+                document.getElementById("loader").classList.remove("fadeOut");
+            });
+        }
+    });
 }
 
 $(() => {
@@ -58,6 +69,6 @@ $(() => {
         setTimeout(() => {
             let loader = document.getElementById("loader");
             loader.classList.add("fadeOut");
-        }, 50);
+        }, 200);
     });
 });

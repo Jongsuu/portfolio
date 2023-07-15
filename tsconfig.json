@@ -20,7 +20,9 @@
     "noUnusedParameters": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": true,
-    "allowJs": false
+    "allowJs": true,
+    "checkJs": false,
+    "allowImportingTsExtensions": true
   },
   "exclude": [
       "node_modules"
