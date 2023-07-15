@@ -37,7 +37,7 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     });
 }
 
-async function registerNavbarEvents(): Promise<void> {
+async function registerEvents(): Promise<void> {
     $(window).on('scroll', async() => {
         let header = $('header');
         header.toggleClass('header-scrolled', $(window).scrollTop() > 20);
@@ -52,18 +52,29 @@ async function registerNavbarEvents(): Promise<void> {
     });
 
     document.body.querySelectorAll("[href]").forEach((item: HTMLLinkElement) => {
-        if (!item.href.includes("#")) {
+        if (!item.href.includes("#") && !item.hasAttribute("download")) {
             item.addEventListener("click", () => {
                 document.getElementById("loader").classList.remove("fadeOut");
             });
         }
     });
+
+    let downloadButtons = document.body.querySelectorAll("[download]");
+
+    if (downloadButtons.length > 0) {
+        let closeButton: HTMLElement = document.querySelector('[data-bs-dismiss="modal"]');
+        downloadButtons.forEach(item => {
+            item.addEventListener("click", () => {
+                closeButton.click();
+            })
+        })
+    }
 }
 
 $(() => {
     let utils = new UtilsComponent();
     changeTranslationsEvent(utils);
-    registerNavbarEvents();
+    registerEvents();
 
     utils.initializeTranslations().then(() => {
         setTimeout(() => {
