@@ -20,10 +20,14 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
         if (!item.id) {
             item.addEventListener("click", async () => {
+                let loader = document.getElementById("loader");
+                loader.classList.remove("fadeOut");
+
                 document.body.classList.remove("show");
                 document.documentElement.lang = item.lang;
+
                 utils.changeTranslations(item.lang).then(() => {
-                    setTimeout(() => { document.body.classList.add("show"); }, 300);
+                    setTimeout(() => { loader.classList.add("fadeOut"); }, 50);
                 });
             })
         }
@@ -47,9 +51,13 @@ async function registerNavbarEvents(): Promise<void> {
 
 $(() => {
     let utils = new UtilsComponent();
-
     changeTranslationsEvent(utils);
     registerNavbarEvents();
 
-    setTimeout(() => { document.body.classList.add("show"); }, 300);
+    utils.initializeTranslations().then(() => {
+        setTimeout(() => {
+            let loader = document.getElementById("loader");
+            loader.classList.add("fadeOut");
+        }, 50);
+    });
 });

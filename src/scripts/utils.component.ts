@@ -12,7 +12,6 @@ export class UtilsComponent {
         this.i18n = new I18n();
         this.i18n.defaultLocale = "en";
         this.i18n.availableLocales = this.availableTranslations;
-        this.initializeTranslations();
     }
 
     private getLocale(): string  {
