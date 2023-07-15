@@ -109,3 +109,11 @@ html {
     opacity: 1;
     transition-duration: var(--transition-duration);
 }
+
+.dropdown-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+}
