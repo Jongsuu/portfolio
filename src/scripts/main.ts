@@ -51,7 +51,7 @@ async function registerEvents(): Promise<void> {
     });
 
     document.body.querySelectorAll("[href]").forEach((item: HTMLLinkElement) => {
-        if (!item.href.includes("#") && !item.hasAttribute("download")) {
+        if (!item.href.includes("#") && !item.hasAttribute("download") && item.href.includes(location.href)) {
             item.addEventListener("click", () => {
                 document.getElementById("loader").classList.remove("fadeOut");
             });
