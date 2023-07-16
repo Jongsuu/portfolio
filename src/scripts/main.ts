@@ -12,20 +12,19 @@ async function loadPage(file: string): Promise<string> {
 }
 
 async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
-    let languageDropdownBtn = document.querySelector<HTMLElement>("#LanguageDropdown");
+    let languageDropdownBtn = document.body.querySelector<HTMLElement>("#LanguageDropdown");
     languageDropdownBtn.click();
 
     setTimeout(() => {
         languageDropdownBtn.click()
     }, 50);
 
-    document.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
+    document.body.querySelector<HTMLElement>("#LanguageOptions").querySelectorAll("a").forEach(item => {
         if (!item.id) {
             item.addEventListener("click", async () => {
                 let loader = document.getElementById("loader");
                 loader.classList.remove("fadeOut");
 
-                document.body.classList.remove("show");
                 document.documentElement.lang = item.lang;
 
                 utils.changeTranslations(item.lang).then(() => {
@@ -42,11 +41,11 @@ async function registerEvents(): Promise<void> {
         header.toggleClass('header-scrolled', $(window).scrollTop() > 20);
     });
 
-    let menuToggle = document.querySelector<HTMLElement>(".nav-menu-toggle");
+    let menuToggle = document.body.querySelector<HTMLElement>(".nav-menu-toggle");
 
     menuToggle.addEventListener("click", async() => {
-        let links = document.querySelector<HTMLElement>(".nav-links-list-mobile");
-        document.querySelector("main").classList.toggle("ocu");
+        let links = document.body.querySelector<HTMLElement>(".nav-links-list-mobile");
+        document.body.querySelector("main").classList.toggle("ocu");
         links.classList.toggle("nav-links-list-mobile-active");
     });
 
@@ -61,7 +60,7 @@ async function registerEvents(): Promise<void> {
     let downloadButtons = document.body.querySelectorAll("[download]");
 
     if (downloadButtons.length > 0) {
-        let closeButton: HTMLElement = document.querySelector('[data-bs-dismiss="modal"]');
+        let closeButton: HTMLElement = document.body.querySelector('[data-bs-dismiss="modal"]');
         downloadButtons.forEach(item => {
             item.addEventListener("click", () => {
                 closeButton.click();
