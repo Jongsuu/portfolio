@@ -3,13 +3,7 @@ import "@fortawesome/fontawesome-free/css/solid.min.css";
 import "@fortawesome/fontawesome-free/css/fontawesome.min.css";
 import "flag-icons/css/flag-icons.min.css";
 import "bootstrap";
-import $ from "jquery";
 import { UtilsComponent } from './utils.component';
-
-async function loadPage(file: string): Promise<string> {
-    const response = await fetch(file);
-    return await response.text();
-}
 
 async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
     let languageDropdownBtn = document.body.querySelector<HTMLElement>("#LanguageDropdown");
@@ -36,9 +30,9 @@ async function changeTranslationsEvent(utils: UtilsComponent): Promise<void> {
 }
 
 async function registerEvents(): Promise<void> {
-    $(window).on('scroll', async() => {
-        let header = $('header');
-        header.toggleClass('header-scrolled', $(window).scrollTop() > 20);
+    window.addEventListener('scroll', async() => {
+        let header = document.body.querySelector("header");
+        header.classList.toggle('header-scrolled', window.scrollY > 20);
     });
 
     let menuToggle = document.body.querySelector<HTMLElement>(".nav-menu-toggle");
@@ -69,7 +63,7 @@ async function registerEvents(): Promise<void> {
     }
 }
 
-$(() => {
+window.addEventListener("DOMContentLoaded", () => {
     let utils = new UtilsComponent();
     changeTranslationsEvent(utils);
     registerEvents();

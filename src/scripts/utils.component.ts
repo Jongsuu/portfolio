@@ -1,4 +1,3 @@
-import $ from "jquery";
 import { I18n } from "i18n-js";
 
 export class UtilsComponent {
@@ -16,7 +15,7 @@ export class UtilsComponent {
 
     private getLocale(): string  {
         // First check stored locale
-        let locale = localStorage.getItem("locale");
+        let locale = sessionStorage.getItem("locale");
 
         if (!locale) {
             locale = "en";
@@ -66,7 +65,7 @@ export class UtilsComponent {
         this.i18n.locale = locale;
 
         // Store the new selected locale
-        localStorage.setItem("locale", locale);
+        sessionStorage.setItem("locale", locale);
 
         const response = await fetch(`/translations/${locale}.json`);
         const translations = await response.json();
